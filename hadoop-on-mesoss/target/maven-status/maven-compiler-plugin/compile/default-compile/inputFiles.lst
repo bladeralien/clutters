@@ -1,0 +1,8 @@
+/Users/peiyuchao/Sources/hadoop-on-mesoss/src/main/java/org/apache/hadoop/mapred/MesosExecutor.java
+/Users/peiyuchao/Sources/hadoop-on-mesoss/src/main/java/org/apache/hadoop/mapred/ResourcePolicy.java
+/Users/peiyuchao/Sources/hadoop-on-mesoss/src/main/java/org/apache/hadoop/mapred/MesosScheduler.java
+/Users/peiyuchao/Sources/hadoop-on-mesoss/src/main/java/org/apache/hadoop/mapred/MesosTracker.java
+/Users/peiyuchao/Sources/hadoop-on-mesoss/src/main/java/org/apache/hadoop/mapred/ResourcePolicyFixed.java
+/Users/peiyuchao/Sources/hadoop-on-mesoss/src/main/java/org/apache/mesos/hadoop/Utils.java
+/Users/peiyuchao/Sources/hadoop-on-mesoss/src/main/java/org/apache/mesos/hadoop/Metrics.java
+/Users/peiyuchao/Sources/hadoop-on-mesoss/src/main/java/org/apache/hadoop/mapred/ResourcePolicyVariable.java

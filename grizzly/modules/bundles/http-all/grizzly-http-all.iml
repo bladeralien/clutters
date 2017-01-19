@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_6" inherit-compiler-output="false">
+    <output url="file://$MODULE_DIR$/target/classes" />
+    <output-test url="file://$MODULE_DIR$/target/test-classes" />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/target" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="grizzly-http-server-core" />
+    <orderEntry type="module" module-name="grizzly-core" />
+    <orderEntry type="module" module-name="grizzly-portunif" />
+    <orderEntry type="module" module-name="grizzly-http-server" />
+    <orderEntry type="module" module-name="grizzly-http-ajp" />
+    <orderEntry type="module" module-name="grizzly-spdy" />
+    <orderEntry type="library" name="Maven: org.glassfish.grizzly:grizzly-npn-api:1.1" level="project" />
+    <orderEntry type="module" module-name="grizzly-http-server-multipart" />
+    <orderEntry type="module" module-name="grizzly-http-servlet" />
+    <orderEntry type="module" module-name="grizzly-comet" />
+    <orderEntry type="module" module-name="grizzly-framework" />
+    <orderEntry type="module" module-name="grizzly-websockets" />
+    <orderEntry type="module" module-name="grizzly-http" />
+    <orderEntry type="module" module-name="grizzly-compression" />
+    <orderEntry type="library" name="Maven: javax.servlet:javax.servlet-api:3.1.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: junit:junit:4.7" level="project" />
+  </component>
+</module>

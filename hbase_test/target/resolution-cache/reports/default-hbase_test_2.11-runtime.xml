@@ -1,0 +1,1415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="default"
+		module="hbase_test_2.11"
+		revision="1.0"
+		conf="runtime"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
+		date="20161008164808"/>
+	<dependencies>
+		<module organisation="io.netty" name="netty">
+			<revision name="3.6.2.Final" status="release" pubdate="20130116194611" resolver="cloudera-release" artresolver="cloudera-release" homepage="http://netty.io/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="79">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="successful" details="" size="26204" time="2137" location="/Users/peiyuchao/.ivy2/cache/io.netty/netty/ivy-3.6.2.Final.xml" searched="true" original-local-location="/Users/peiyuchao/.ivy2/cache/io.netty/netty/ivy-3.6.2.Final.xml.original" origin-is-local="false" origin-location="https://repository.cloudera.com/artifactory/cloudera-repos/io/netty/netty/3.6.2.Final/netty-3.6.2.Final.pom"/>
+				<caller organisation="org.apache.zookeeper" name="zookeeper" conf="compile, runtime" rev="3.6.2.Final" rev-constraint-default="3.6.2.Final" rev-constraint-dynamic="3.7.0.Final" callerrev="3.4.6"/>
+				<artifacts>
+					<artifact name="netty" type="bundle" ext="jar" status="successful" details="" size="1199572" time="5478" location="/Users/peiyuchao/.ivy2/cache/io.netty/netty/bundles/netty-3.6.2.Final.jar">
+						<origin-location is-local="false" location="https://repository.cloudera.com/artifactory/cloudera-repos/io/netty/netty/3.6.2.Final/netty-3.6.2.Final.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.httpcomponents" name="httpcore">
+			<revision name="4.2.5" status="release" pubdate="20130729231428" resolver="cloudera-release" artresolver="cloudera-release" homepage="http://hc.apache.org/httpcomponents-core-ga" downloaded="true" searched="true" default="false" conf="compile, master(compile), compile(*), master, runtime(*)" position="72">
+				<metadata-artifact status="successful" details="" size="4871" time="1501" location="/Users/peiyuchao/.ivy2/cache/org.apache.httpcomponents/httpcore/ivy-4.2.5.xml" searched="true" original-local-location="/Users/peiyuchao/.ivy2/cache/org.apache.httpcomponents/httpcore/ivy-4.2.5.xml.original" origin-is-local="false" origin-location="https://repository.cloudera.com/artifactory/cloudera-repos/org/apache/httpcomponents/httpcore/4.2.5/httpcore-4.2.5.pom"/>
+				<caller organisation="org.apache.httpcomponents" name="httpclient" conf="compile" rev="4.2.5" rev-constraint-default="4.2.5" rev-constraint-dynamic="4.2.4" callerrev="4.2.5"/>
+				<caller organisation="org.apache.httpcomponents" name="httpclient" conf="compile" rev="4.1.2" rev-constraint-default="4.1.2" rev-constraint-dynamic="4.1.2" callerrev="4.1.2"/>
+				<caller organisation="net.java.dev.jets3t" name="jets3t" conf="compile, runtime" rev="4.1.2" rev-constraint-default="4.1.2" rev-constraint-dynamic="4.1.2" callerrev="0.9.0"/>
+				<artifacts>
+					<artifact name="httpcore" type="jar" ext="jar" status="successful" details="" size="227708" time="8062" location="/Users/peiyuchao/.ivy2/cache/org.apache.httpcomponents/httpcore/jars/httpcore-4.2.5.jar">
+						<origin-location is-local="false" location="https://repository.cloudera.com/artifactory/cloudera-repos/org/apache/httpcomponents/httpcore/4.2.5/httpcore-4.2.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="4.1.2" status="release" pubdate="20110710190325" resolver="cloudera-release" artresolver="cloudera-release" evicted="latest-revision" evicted-reason="" homepage="http://hc.apache.org/httpcomponents-core-ga" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<metadata-artifact status="successful" details="" size="7390" time="1193" location="/Users/peiyuchao/.ivy2/cache/org.apache.httpcomponents/httpcore/ivy-4.1.2.xml" searched="true" original-local-location="/Users/peiyuchao/.ivy2/cache/org.apache.httpcomponents/httpcore/ivy-4.1.2.xml.original" origin-is-local="false" origin-location="https://repository.cloudera.com/artifactory/cloudera-repos/org/apache/httpcomponents/httpcore/4.1.2/httpcore-4.1.2.pom"/>
+				<evicted-by rev="4.2.5"/>
+				<caller organisation="org.apache.httpcomponents" name="httpclient" conf="compile, runtime" rev="4.2.4" rev-constraint-default="4.2.4" rev-constraint-dynamic="4.2.4" callerrev="4.2.5"/>
+				<caller organisation="org.apache.httpcomponents" name="httpclient" conf="compile" rev="4.1.2" rev-constraint-default="4.1.2" rev-constraint-dynamic="4.1.2" callerrev="4.1.2"/>
+				<caller organisation="net.java.dev.jets3t" name="jets3t" conf="compile, runtime" rev="4.1.2" rev-constraint-default="4.1.2" rev-constraint-dynamic="4.1.2" callerrev="0.9.0"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="4.2.4" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="4.1.2"/>
+				<caller organisation="org.apache.httpcomponents" name="httpclient" conf="compile, runtime" rev="4.2.4" rev-constraint-default="4.2.4" rev-constraint-dynamic="4.2.4" callerrev="4.2.5"/>
+				<caller organisation="org.apache.httpcomponents" name="httpclient" conf="compile" rev="4.1.2" rev-constraint-default="4.1.2" rev-constraint-dynamic="4.1.2" callerrev="4.1.2"/>
+				<caller organisation="net.java.dev.jets3t" name="jets3t" conf="compile, runtime" rev="4.1.2" rev-constraint-default="4.1.2" rev-constraint-dynamic="4.1.2" callerrev="0.9.0"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.hadoop" name="hadoop-common">
+			<revision name="2.7.3" status="release" pubdate="20160818090317" resolver="cloudera-release" artresolver="cloudera-release" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="36">
+				<metadata-artifact status="successful" details="" size="30433" time="1371" location="/Users/peiyuchao/.ivy2/cache/org.apache.hadoop/hadoop-common/ivy-2.7.3.xml" searched="true" original-local-location="/Users/peiyuchao/.ivy2/cache/org.apache.hadoop/hadoop-common/ivy-2.7.3.xml.original" origin-is-local="false" origin-location="https://repository.cloudera.com/artifactory/cloudera-repos/org/apache/hadoop/hadoop-common/2.7.3/hadoop-common-2.7.3.pom"/>
+				<caller organisation="default" name="hbase_test_2.11" conf="compile, runtime" rev="2.7.3" rev-constraint-default="2.7.3" rev-constraint-dynamic="2.7.3" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="hadoop-common" type="jar" ext="jar" status="successful" details="" size="3479293" time="12471" location="/Users/peiyuchao/.ivy2/cache/org.apache.hadoop/hadoop-common/jars/hadoop-common-2.7.3.jar">
+						<origin-location is-local="false" location="https://repository.cloudera.com/artifactory/cloudera-repos/org/apache/hadoop/hadoop-common/2.7.3/hadoop-common-2.7.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.google.code.findbugs" name="jsr305">
+			<revision name="3.0.0" status="release" pubdate="20140710195548" resolver="cloudera-release" artresolver="cloudera-release" homepage="http://findbugs.sourceforge.net/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="84">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="3853" time="3946" location="/Users/peiyuchao/.ivy2/cache/com.google.code.findbugs/jsr305/ivy-3.0.0.xml" searched="true" original-local-location="/Users/peiyuchao/.ivy2/cache/com.google.code.findbugs/jsr305/ivy-3.0.0.xml.original" origin-is-local="false" origin-location="https://repository.cloudera.com/artifactory/cloudera-repos/com/google/code/findbugs/jsr305/3.0.0/jsr305-3.0.0.pom"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-common" conf="default, compile, runtime, master" rev="3.0.0" rev-constraint-default="3.0.0" rev-constraint-dynamic="3.0.0" callerrev="2.7.3"/>
+				<artifacts>
+					<artifact name="jsr305" type="jar" ext="jar" status="successful" details="" size="33031" time="2171" location="/Users/peiyuchao/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-3.0.0.jar">
+						<origin-location is-local="false" location="https://repository.cloudera.com/artifactory/cloudera-repos/com/google/code/findbugs/jsr305/3.0.0/jsr305-3.0.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.curator" name="curator-recipes">
+			<revision name="2.7.1" status="release" pubdate="20150113213219" resolver="cloudera-release" artresolver="cloudera-release" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="83">
+				<metadata-artifact status="successful" details="" size="2365" time="1918" location="/Users/peiyuchao/.ivy2/cache/org.apache.curator/curator-recipes/ivy-2.7.1.xml" searched="true" original-local-location="/Users/peiyuchao/.ivy2/cache/org.apache.curator/curator-recipes/ivy-2.7.1.xml.original" origin-is-local="false" origin-location="https://repository.cloudera.com/artifactory/cloudera-repos/org/apache/curator/curator-recipes/2.7.1/curator-recipes-2.7.1.pom"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-common" conf="default, compile, runtime, master" rev="2.7.1" rev-constraint-default="2.7.1" rev-constraint-dynamic="2.7.1" callerrev="2.7.3"/>
+				<artifacts>
+					<artifact name="curator-recipes" type="bundle" ext="jar" status="successful" details="" size="270342" time="3473" location="/Users/peiyuchao/.ivy2/cache/org.apache.curator/curator-recipes/bundles/curator-recipes-2.7.1.jar">
+						<origin-location is-local="false" location="https://repository.cloudera.com/artifactory/cloudera-repos/org/apache/curator/curator-recipes/2.7.1/curator-recipes-2.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.jcraft" name="jsch">
+			<revision name="0.1.42" status="release" pubdate="20090807022939" resolver="cloudera-release" artresolver="cloudera-release" homepage="http://www.jcraft.com/jsch/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="82">
+				<license name="BSD" url="http://www.jcraft.com/jsch/LICENSE.txt"/>
+				<metadata-artifact status="successful" details="" size="967" time="1858" location="/Users/peiyuchao/.ivy2/cache/com.jcraft/jsch/ivy-0.1.42.xml" searched="true" original-local-location="/Users/peiyuchao/.ivy2/cache/com.jcraft/jsch/ivy-0.1.42.xml.original" origin-is-local="false" origin-location="https://repository.cloudera.com/artifactory/cloudera-repos/com/jcraft/jsch/0.1.42/jsch-0.1.42.pom"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-common" conf="default, compile, runtime, master" rev="0.1.42" rev-constraint-default="0.1.42" rev-constraint-dynamic="0.1.42" callerrev="2.7.3"/>
+				<artifacts>
+					<artifact name="jsch" type="jar" ext="jar" status="successful" details="" size="185746" time="3100" location="/Users/peiyuchao/.ivy2/cache/com.jcraft/jsch/jars/jsch-0.1.42.jar">
+						<origin-location is-local="false" location="https://repository.cloudera.com/artifactory/cloudera-repos/com/jcraft/jsch/0.1.42/jsch-0.1.42.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.hadoop" name="hadoop-auth">
+			<revision name="2.7.3" status="release" pubdate="20160818090126" resolver="cloudera-release" artresolver="cloudera-release" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="70">
+				<metadata-artifact status="successful" details="" size="7658" time="1239" location="/Users/peiyuchao/.ivy2/cache/org.apache.hadoop/hadoop-auth/ivy-2.7.3.xml" searched="true" original-local-location="/Users/peiyuchao/.ivy2/cache/org.apache.hadoop/hadoop-auth/ivy-2.7.3.xml.original" origin-is-local="false" origin-location="https://repository.cloudera.com/artifactory/cloudera-repos/org/apache/hadoop/hadoop-auth/2.7.3/hadoop-auth-2.7.3.pom"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-common" conf="default, compile, runtime, master" rev="2.7.3" rev-constraint-default="2.7.3" rev-constraint-dynamic="2.7.3" callerrev="2.7.3"/>
+				<artifacts>
+					<artifact name="hadoop-auth" type="jar" ext="jar" status="successful" details="" size="94150" time="6142" location="/Users/peiyuchao/.ivy2/cache/org.apache.hadoop/hadoop-auth/jars/hadoop-auth-2.7.3.jar">
+						<origin-location is-local="false" location="https://repository.cloudera.com/artifactory/cloudera-repos/org/apache/hadoop/hadoop-auth/2.7.3/hadoop-auth-2.7.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.curator" name="curator-framework">
+			<revision name="2.7.1" status="release" pubdate="20150113213203" resolver="cloudera-release" artresolver="cloudera-release" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="80">
+				<metadata-artifact status="successful" details="" size="2164" time="1159" location="/Users/peiyuchao/.ivy2/cache/org.apache.curator/curator-framework/ivy-2.7.1.xml" searched="true" original-local-location="/Users/peiyuchao/.ivy2/cache/org.apache.curator/curator-framework/ivy-2.7.1.xml.original" origin-is-local="false" origin-location="https://repository.cloudera.com/artifactory/cloudera-repos/org/apache/curator/curator-framework/2.7.1/curator-framework-2.7.1.pom"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-auth" conf="compile, runtime" rev="2.7.1" rev-constraint-default="2.7.1" rev-constraint-dynamic="2.7.1" callerrev="2.7.3"/>
+				<caller organisation="org.apache.curator" name="curator-recipes" conf="compile, runtime" rev="2.7.1" rev-constraint-default="2.7.1" rev-constraint-dynamic="2.7.1" callerrev="2.7.1"/>
+				<artifacts>
+					<artifact name="curator-framework" type="bundle" ext="jar" status="successful" details="" size="186273" time="1909" location="/Users/peiyuchao/.ivy2/cache/org.apache.curator/curator-framework/bundles/curator-framework-2.7.1.jar">
+						<origin-location is-local="false" location="https://repository.cloudera.com/artifactory/cloudera-repos/org/apache/curator/curator-framework/2.7.1/curator-framework-2.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.curator" name="curator-client">
+			<revision name="2.7.1" status="release" pubdate="20150113213145" resolver="cloudera-release" artresolver="cloudera-release" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="81">
+				<metadata-artifact status="successful" details="" size="2260" time="1310" location="/Users/peiyuchao/.ivy2/cache/org.apache.curator/curator-client/ivy-2.7.1.xml" searched="true" original-local-location="/Users/peiyuchao/.ivy2/cache/org.apache.curator/curator-client/ivy-2.7.1.xml.original" origin-is-local="false" origin-location="https://repository.cloudera.com/artifactory/cloudera-repos/org/apache/curator/curator-client/2.7.1/curator-client-2.7.1.pom"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-common" conf="default, compile, runtime, master" rev="2.7.1" rev-constraint-default="2.7.1" rev-constraint-dynamic="2.7.1" callerrev="2.7.3"/>
+				<caller organisation="org.apache.curator" name="curator-framework" conf="compile, runtime" rev="2.7.1" rev-constraint-default="2.7.1" rev-constraint-dynamic="2.7.1" callerrev="2.7.1"/>
+				<artifacts>
+					<artifact name="curator-client" type="bundle" ext="jar" status="successful" details="" size="69500" time="1664" location="/Users/peiyuchao/.ivy2/cache/org.apache.curator/curator-client/bundles/curator-client-2.7.1.jar">
+						<origin-location is-local="false" location="https://repository.cloudera.com/artifactory/cloudera-repos/org/apache/curator/curator-client/2.7.1/curator-client-2.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.zookeeper" name="zookeeper">
+			<revision name="3.4.6" status="release" pubdate="20140224011800" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="77">
+				<metadata-artifact status="no" details="" size="4226" time="0" location="/Users/peiyuchao/.ivy2/cache/org.apache.zookeeper/zookeeper/ivy-3.4.6.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/apache/zookeeper/zookeeper/3.4.6/zookeeper-3.4.6.pom"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-auth" conf="compile, runtime" rev="3.4.6" rev-constraint-default="3.4.6" rev-constraint-dynamic="3.4.6" callerrev="2.7.3"/>
+				<caller organisation="org.apache.curator" name="curator-recipes" conf="compile, runtime" rev="3.4.6" rev-constraint-default="3.4.6" rev-constraint-dynamic="3.4.6" callerrev="2.7.1"/>
+				<caller organisation="org.apache.hbase" name="hbase-client" conf="default, compile, runtime, master" rev="3.4.5-cdh5.8.2" rev-constraint-default="3.4.5-cdh5.8.2" rev-constraint-dynamic="3.4.5-cdh5.8.2" callerrev="1.2.0-cdh5.8.2"/>
+				<caller organisation="org.apache.curator" name="curator-client" conf="compile, runtime" rev="3.4.6" rev-constraint-default="3.4.6" rev-constraint-dynamic="3.4.6" callerrev="2.7.1"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-common" conf="default, compile, runtime, master" rev="3.4.6" rev-constraint-default="3.4.6" rev-constraint-dynamic="3.4.6" callerrev="2.7.3"/>
+				<caller organisation="org.apache.curator" name="curator-framework" conf="compile, runtime" rev="3.4.6" rev-constraint-default="3.4.6" rev-constraint-dynamic="3.4.6" callerrev="2.7.1"/>
+				<artifacts>
+					<artifact name="zookeeper" type="jar" ext="jar" status="no" details="" size="792964" time="0" location="/Users/peiyuchao/.ivy2/cache/org.apache.zookeeper/zookeeper/jars/zookeeper-3.4.6.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/apache/zookeeper/zookeeper/3.4.6/zookeeper-3.4.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="3.4.5-cdh5.8.2" status="release" pubdate="20160912025903" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<metadata-artifact status="no" details="" size="72001" time="0" location="/Users/peiyuchao/.ivy2/cache/org.apache.zookeeper/zookeeper/ivy-3.4.5-cdh5.8.2.xml" searched="false" origin-is-local="false" origin-location="https://repository.cloudera.com/artifactory/cloudera-repos/org/apache/zookeeper/zookeeper/3.4.5-cdh5.8.2/zookeeper-3.4.5-cdh5.8.2.pom"/>
+				<evicted-by rev="3.4.6"/>
+				<caller organisation="org.apache.hbase" name="hbase-client" conf="default, compile, runtime, master" rev="3.4.5-cdh5.8.2" rev-constraint-default="3.4.5-cdh5.8.2" rev-constraint-dynamic="3.4.5-cdh5.8.2" callerrev="1.2.0-cdh5.8.2"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="jline" name="jline">
+			<revision name="0.9.94" status="release" pubdate="20080831194541" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://jline.sourceforge.net" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="86">
+				<license name="BSD" url="LICENSE.txt"/>
+				<metadata-artifact status="no" details="" size="2842" time="0" location="/Users/peiyuchao/.ivy2/cache/jline/jline/ivy-0.9.94.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/jline/jline/0.9.94/jline-0.9.94.pom"/>
+				<caller organisation="org.apache.zookeeper" name="zookeeper" conf="compile, runtime" rev="0.9.94" rev-constraint-default="0.9.94" rev-constraint-dynamic="0.9.94" callerrev="3.4.6"/>
+				<artifacts>
+					<artifact name="jline" type="jar" ext="jar" status="no" details="" size="87325" time="0" location="/Users/peiyuchao/.ivy2/cache/jline/jline/jars/jline-0.9.94.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/jline/jline/0.9.94/jline-0.9.94.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.directory.server" name="apacheds-kerberos-codec">
+			<revision name="2.0.0-M15" status="release" pubdate="20130814230537" resolver="cloudera-release" artresolver="cloudera-release" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="73">
+				<metadata-artifact status="successful" details="" size="3920" time="1287" location="/Users/peiyuchao/.ivy2/cache/org.apache.directory.server/apacheds-kerberos-codec/ivy-2.0.0-M15.xml" searched="true" original-local-location="/Users/peiyuchao/.ivy2/cache/org.apache.directory.server/apacheds-kerberos-codec/ivy-2.0.0-M15.xml.original" origin-is-local="false" origin-location="https://repository.cloudera.com/artifactory/cloudera-repos/org/apache/directory/server/apacheds-kerberos-codec/2.0.0-M15/apacheds-kerberos-codec-2.0.0-M15.pom"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-auth" conf="compile, runtime" rev="2.0.0-M15" rev-constraint-default="2.0.0-M15" rev-constraint-dynamic="2.0.0-M15" callerrev="2.7.3"/>
+				<artifacts>
+					<artifact name="apacheds-kerberos-codec" type="bundle" ext="jar" status="successful" details="" size="691479" time="2306" location="/Users/peiyuchao/.ivy2/cache/org.apache.directory.server/apacheds-kerberos-codec/bundles/apacheds-kerberos-codec-2.0.0-M15.jar">
+						<origin-location is-local="false" location="https://repository.cloudera.com/artifactory/cloudera-repos/org/apache/directory/server/apacheds-kerberos-codec/2.0.0-M15/apacheds-kerberos-codec-2.0.0-M15.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.directory.api" name="api-util">
+			<revision name="1.0.0-M20" status="release" pubdate="20130814162558" resolver="cloudera-release" artresolver="cloudera-release" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="76">
+				<metadata-artifact status="successful" details="" size="2367" time="1547" location="/Users/peiyuchao/.ivy2/cache/org.apache.directory.api/api-util/ivy-1.0.0-M20.xml" searched="true" original-local-location="/Users/peiyuchao/.ivy2/cache/org.apache.directory.api/api-util/ivy-1.0.0-M20.xml.original" origin-is-local="false" origin-location="https://repository.cloudera.com/artifactory/cloudera-repos/org/apache/directory/api/api-util/1.0.0-M20/api-util-1.0.0-M20.pom"/>
+				<caller organisation="org.apache.directory.server" name="apacheds-kerberos-codec" conf="compile, runtime" rev="1.0.0-M20" rev-constraint-default="1.0.0-M20" rev-constraint-dynamic="1.0.0-M20" callerrev="2.0.0-M15"/>
+				<artifacts>
+					<artifact name="api-util" type="bundle" ext="jar" status="successful" details="" size="79912" time="2563" location="/Users/peiyuchao/.ivy2/cache/org.apache.directory.api/api-util/bundles/api-util-1.0.0-M20.jar">
+						<origin-location is-local="false" location="https://repository.cloudera.com/artifactory/cloudera-repos/org/apache/directory/api/api-util/1.0.0-M20/api-util-1.0.0-M20.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.directory.api" name="api-asn1-api">
+			<revision name="1.0.0-M20" status="release" pubdate="20130814163000" resolver="cloudera-release" artresolver="cloudera-release" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="75">
+				<metadata-artifact status="successful" details="" size="2685" time="1507" location="/Users/peiyuchao/.ivy2/cache/org.apache.directory.api/api-asn1-api/ivy-1.0.0-M20.xml" searched="true" original-local-location="/Users/peiyuchao/.ivy2/cache/org.apache.directory.api/api-asn1-api/ivy-1.0.0-M20.xml.original" origin-is-local="false" origin-location="https://repository.cloudera.com/artifactory/cloudera-repos/org/apache/directory/api/api-asn1-api/1.0.0-M20/api-asn1-api-1.0.0-M20.pom"/>
+				<caller organisation="org.apache.directory.server" name="apacheds-kerberos-codec" conf="compile, runtime" rev="1.0.0-M20" rev-constraint-default="1.0.0-M20" rev-constraint-dynamic="1.0.0-M20" callerrev="2.0.0-M15"/>
+				<artifacts>
+					<artifact name="api-asn1-api" type="bundle" ext="jar" status="successful" details="" size="16560" time="2397" location="/Users/peiyuchao/.ivy2/cache/org.apache.directory.api/api-asn1-api/bundles/api-asn1-api-1.0.0-M20.jar">
+						<origin-location is-local="false" location="https://repository.cloudera.com/artifactory/cloudera-repos/org/apache/directory/api/api-asn1-api/1.0.0-M20/api-asn1-api-1.0.0-M20.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.directory.server" name="apacheds-i18n">
+			<revision name="2.0.0-M15" status="release" pubdate="20130814225100" resolver="cloudera-release" artresolver="cloudera-release" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="74">
+				<metadata-artifact status="successful" details="" size="2399" time="1304" location="/Users/peiyuchao/.ivy2/cache/org.apache.directory.server/apacheds-i18n/ivy-2.0.0-M15.xml" searched="true" original-local-location="/Users/peiyuchao/.ivy2/cache/org.apache.directory.server/apacheds-i18n/ivy-2.0.0-M15.xml.original" origin-is-local="false" origin-location="https://repository.cloudera.com/artifactory/cloudera-repos/org/apache/directory/server/apacheds-i18n/2.0.0-M15/apacheds-i18n-2.0.0-M15.pom"/>
+				<caller organisation="org.apache.directory.server" name="apacheds-kerberos-codec" conf="compile, runtime" rev="2.0.0-M15" rev-constraint-default="2.0.0-M15" rev-constraint-dynamic="2.0.0-M15" callerrev="2.0.0-M15"/>
+				<artifacts>
+					<artifact name="apacheds-i18n" type="bundle" ext="jar" status="successful" details="" size="44925" time="2160" location="/Users/peiyuchao/.ivy2/cache/org.apache.directory.server/apacheds-i18n/bundles/apacheds-i18n-2.0.0-M15.jar">
+						<origin-location is-local="false" location="https://repository.cloudera.com/artifactory/cloudera-repos/org/apache/directory/server/apacheds-i18n/2.0.0-M15/apacheds-i18n-2.0.0-M15.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.httpcomponents" name="httpclient">
+			<revision name="4.2.5" status="release" pubdate="20130420002959" resolver="cloudera-release" artresolver="cloudera-release" homepage="http://hc.apache.org/httpcomponents-client" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="71">
+				<metadata-artifact status="successful" details="" size="5911" time="2697" location="/Users/peiyuchao/.ivy2/cache/org.apache.httpcomponents/httpclient/ivy-4.2.5.xml" searched="true" original-local-location="/Users/peiyuchao/.ivy2/cache/org.apache.httpcomponents/httpclient/ivy-4.2.5.xml.original" origin-is-local="false" origin-location="https://repository.cloudera.com/artifactory/cloudera-repos/org/apache/httpcomponents/httpclient/4.2.5/httpclient-4.2.5.pom"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-auth" conf="compile, runtime" rev="4.2.5" rev-constraint-default="4.2.5" rev-constraint-dynamic="4.2.5" callerrev="2.7.3"/>
+				<caller organisation="net.java.dev.jets3t" name="jets3t" conf="compile, runtime" rev="4.1.2" rev-constraint-default="4.1.2" rev-constraint-dynamic="4.1.2" callerrev="0.9.0"/>
+				<artifacts>
+					<artifact name="httpclient" type="jar" ext="jar" status="successful" details="" size="433368" time="1863" location="/Users/peiyuchao/.ivy2/cache/org.apache.httpcomponents/httpclient/jars/httpclient-4.2.5.jar">
+						<origin-location is-local="false" location="https://repository.cloudera.com/artifactory/cloudera-repos/org/apache/httpcomponents/httpclient/4.2.5/httpclient-4.2.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="4.1.2" status="release" pubdate="20110730060203" resolver="cloudera-release" artresolver="cloudera-release" evicted="latest-revision" evicted-reason="" homepage="http://hc.apache.org/httpcomponents-client" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<metadata-artifact status="successful" details="" size="5990" time="1919" location="/Users/peiyuchao/.ivy2/cache/org.apache.httpcomponents/httpclient/ivy-4.1.2.xml" searched="true" original-local-location="/Users/peiyuchao/.ivy2/cache/org.apache.httpcomponents/httpclient/ivy-4.1.2.xml.original" origin-is-local="false" origin-location="https://repository.cloudera.com/artifactory/cloudera-repos/org/apache/httpcomponents/httpclient/4.1.2/httpclient-4.1.2.pom"/>
+				<evicted-by rev="4.2.5"/>
+				<caller organisation="net.java.dev.jets3t" name="jets3t" conf="compile, runtime" rev="4.1.2" rev-constraint-default="4.1.2" rev-constraint-dynamic="4.1.2" callerrev="0.9.0"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.google.code.gson" name="gson">
+			<revision name="2.2.4" status="release" pubdate="20130514055652" resolver="cloudera-release" artresolver="cloudera-release" homepage="http://code.google.com/p/google-gson/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="69">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="8038" time="1334" location="/Users/peiyuchao/.ivy2/cache/com.google.code.gson/gson/ivy-2.2.4.xml" searched="true" original-local-location="/Users/peiyuchao/.ivy2/cache/com.google.code.gson/gson/ivy-2.2.4.xml.original" origin-is-local="false" origin-location="https://repository.cloudera.com/artifactory/cloudera-repos/com/google/code/gson/gson/2.2.4/gson-2.2.4.pom"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-common" conf="default, compile, runtime, master" rev="2.2.4" rev-constraint-default="2.2.4" rev-constraint-dynamic="2.2.4" callerrev="2.7.3"/>
+				<artifacts>
+					<artifact name="gson" type="jar" ext="jar" status="successful" details="" size="190432" time="3247" location="/Users/peiyuchao/.ivy2/cache/com.google.code.gson/gson/jars/gson-2.2.4.jar">
+						<origin-location is-local="false" location="https://repository.cloudera.com/artifactory/cloudera-repos/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.avro" name="avro">
+			<revision name="1.7.4" status="release" pubdate="20130223015907" resolver="cloudera-release" artresolver="cloudera-release" homepage="http://avro.apache.org" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="64">
+				<metadata-artifact status="successful" details="" size="4222" time="1036" location="/Users/peiyuchao/.ivy2/cache/org.apache.avro/avro/ivy-1.7.4.xml" searched="true" original-local-location="/Users/peiyuchao/.ivy2/cache/org.apache.avro/avro/ivy-1.7.4.xml.original" origin-is-local="false" origin-location="https://repository.cloudera.com/artifactory/cloudera-repos/org/apache/avro/avro/1.7.4/avro-1.7.4.pom"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-common" conf="default, compile, runtime, master" rev="1.7.4" rev-constraint-default="1.7.4" rev-constraint-dynamic="1.7.4" callerrev="2.7.3"/>
+				<artifacts>
+					<artifact name="avro" type="jar" ext="jar" status="successful" details="" size="303139" time="2568" location="/Users/peiyuchao/.ivy2/cache/org.apache.avro/avro/jars/avro-1.7.4.jar">
+						<origin-location is-local="false" location="https://repository.cloudera.com/artifactory/cloudera-repos/org/apache/avro/avro/1.7.4/avro-1.7.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.commons" name="commons-compress">
+			<revision name="1.4.1" status="release" pubdate="20120522125732" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/compress/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="67">
+				<metadata-artifact status="no" details="" size="7888" time="0" location="/Users/peiyuchao/.ivy2/cache/org.apache.commons/commons-compress/ivy-1.4.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/commons/commons-compress/1.4.1/commons-compress-1.4.1.pom"/>
+				<caller organisation="org.apache.avro" name="avro" conf="compile, runtime" rev="1.4.1" rev-constraint-default="1.4.1" rev-constraint-dynamic="1.4.1" callerrev="1.7.4"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-common" conf="default, compile, runtime, master" rev="1.4.1" rev-constraint-default="1.4.1" rev-constraint-dynamic="1.4.1" callerrev="2.7.3"/>
+				<artifacts>
+					<artifact name="commons-compress" type="jar" ext="jar" status="no" details="" size="241367" time="0" location="/Users/peiyuchao/.ivy2/cache/org.apache.commons/commons-compress/jars/commons-compress-1.4.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/commons/commons-compress/1.4.1/commons-compress-1.4.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.tukaani" name="xz">
+			<revision name="1.0" status="release" pubdate="20111022174446" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://tukaani.org/xz/java.html" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="68">
+				<license name="Public Domain"/>
+				<metadata-artifact status="no" details="" size="2277" time="0" location="/Users/peiyuchao/.ivy2/cache/org.tukaani/xz/ivy-1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/tukaani/xz/1.0/xz-1.0.pom"/>
+				<caller organisation="org.apache.commons" name="commons-compress" conf="compile, runtime" rev="1.0" rev-constraint-default="1.0" rev-constraint-dynamic="1.0" callerrev="1.4.1"/>
+				<artifacts>
+					<artifact name="xz" type="jar" ext="jar" status="no" details="" size="94672" time="0" location="/Users/peiyuchao/.ivy2/cache/org.tukaani/xz/jars/xz-1.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/tukaani/xz/1.0/xz-1.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.xerial.snappy" name="snappy-java">
+			<revision name="1.0.4.1" status="release" pubdate="20111005093507" resolver="cloudera-release" artresolver="cloudera-release" homepage="http://code.google.com/p/snappy-java/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="66">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="9273" time="1561" location="/Users/peiyuchao/.ivy2/cache/org.xerial.snappy/snappy-java/ivy-1.0.4.1.xml" searched="true" original-local-location="/Users/peiyuchao/.ivy2/cache/org.xerial.snappy/snappy-java/ivy-1.0.4.1.xml.original" origin-is-local="false" origin-location="https://repository.cloudera.com/artifactory/cloudera-repos/org/xerial/snappy/snappy-java/1.0.4.1/snappy-java-1.0.4.1.pom"/>
+				<caller organisation="org.apache.avro" name="avro" conf="compile, runtime" rev="1.0.4.1" rev-constraint-default="1.0.4.1" rev-constraint-dynamic="1.0.4.1" callerrev="1.7.4"/>
+				<artifacts>
+					<artifact name="snappy-java" type="bundle" ext="jar" status="successful" details="" size="995968" time="5799" location="/Users/peiyuchao/.ivy2/cache/org.xerial.snappy/snappy-java/bundles/snappy-java-1.0.4.1.jar">
+						<origin-location is-local="false" location="https://repository.cloudera.com/artifactory/cloudera-repos/org/xerial/snappy/snappy-java/1.0.4.1/snappy-java-1.0.4.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.thoughtworks.paranamer" name="paranamer">
+			<revision name="2.3" status="release" pubdate="20101019211430" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="65">
+				<metadata-artifact status="no" details="" size="3364" time="0" location="/Users/peiyuchao/.ivy2/cache/com.thoughtworks.paranamer/paranamer/ivy-2.3.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/com/thoughtworks/paranamer/paranamer/2.3/paranamer-2.3.pom"/>
+				<caller organisation="org.apache.avro" name="avro" conf="compile, runtime" rev="2.3" rev-constraint-default="2.3" rev-constraint-dynamic="2.3" callerrev="1.7.4"/>
+				<artifacts>
+					<artifact name="paranamer" type="jar" ext="jar" status="successful" details="" size="29555" time="1909" location="/Users/peiyuchao/.ivy2/cache/com.thoughtworks.paranamer/paranamer/jars/paranamer-2.3.jar">
+						<origin-location is-local="false" location="https://repository.cloudera.com/artifactory/cloudera-repos/com/thoughtworks/paranamer/paranamer/2.3/paranamer-2.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.codehaus.jackson" name="jackson-mapper-asl">
+			<revision name="1.9.13" status="release" pubdate="20130715110750" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://jackson.codehaus.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="63">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2661" time="0" location="/Users/peiyuchao/.ivy2/cache/org.codehaus.jackson/jackson-mapper-asl/ivy-1.9.13.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/codehaus/jackson/jackson-mapper-asl/1.9.13/jackson-mapper-asl-1.9.13.pom"/>
+				<caller organisation="com.sun.jersey" name="jersey-json" conf="compile, runtime" rev="1.8.3" rev-constraint-default="1.8.3" rev-constraint-dynamic="1.8.3" callerrev="1.9"/>
+				<caller organisation="org.codehaus.jackson" name="jackson-xc" conf="compile, runtime" rev="1.8.3" rev-constraint-default="1.8.3" rev-constraint-dynamic="1.8.3" callerrev="1.8.3"/>
+				<caller organisation="org.apache.hbase" name="hbase-client" conf="default, compile, runtime, master" rev="1.8.8" rev-constraint-default="1.8.8" rev-constraint-dynamic="1.8.8" callerrev="1.2.0-cdh5.8.2"/>
+				<caller organisation="org.codehaus.jackson" name="jackson-jaxrs" conf="compile, runtime" rev="1.8.3" rev-constraint-default="1.8.3" rev-constraint-dynamic="1.8.3" callerrev="1.8.3"/>
+				<caller organisation="org.apache.avro" name="avro" conf="compile, runtime" rev="1.8.8" rev-constraint-default="1.8.8" rev-constraint-dynamic="1.8.8" callerrev="1.7.4"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-common" conf="default, compile, runtime, master" rev="1.9.13" rev-constraint-default="1.9.13" rev-constraint-dynamic="1.9.13" callerrev="2.7.3"/>
+				<artifacts>
+					<artifact name="jackson-mapper-asl" type="jar" ext="jar" status="no" details="" size="780664" time="0" location="/Users/peiyuchao/.ivy2/cache/org.codehaus.jackson/jackson-mapper-asl/jars/jackson-mapper-asl-1.9.13.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/codehaus/jackson/jackson-mapper-asl/1.9.13/jackson-mapper-asl-1.9.13.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="1.8.8" status="release" pubdate="20120121092502" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="http://jackson.codehaus.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2659" time="0" location="/Users/peiyuchao/.ivy2/cache/org.codehaus.jackson/jackson-mapper-asl/ivy-1.8.8.xml" searched="false" origin-is-local="false" origin-location="http://repo2.maven.org/maven2/org/codehaus/jackson/jackson-mapper-asl/1.8.8/jackson-mapper-asl-1.8.8.pom"/>
+				<evicted-by rev="1.9.13"/>
+				<caller organisation="com.sun.jersey" name="jersey-json" conf="compile, runtime" rev="1.8.3" rev-constraint-default="1.8.3" rev-constraint-dynamic="1.8.3" callerrev="1.9"/>
+				<caller organisation="org.apache.hbase" name="hbase-client" conf="default, compile, runtime, master" rev="1.8.8" rev-constraint-default="1.8.8" rev-constraint-dynamic="1.8.8" callerrev="1.2.0-cdh5.8.2"/>
+				<caller organisation="org.codehaus.jackson" name="jackson-xc" conf="compile, runtime" rev="1.8.3" rev-constraint-default="1.8.3" rev-constraint-dynamic="1.8.3" callerrev="1.8.3"/>
+				<caller organisation="org.codehaus.jackson" name="jackson-jaxrs" conf="compile, runtime" rev="1.8.3" rev-constraint-default="1.8.3" rev-constraint-dynamic="1.8.3" callerrev="1.8.3"/>
+				<caller organisation="org.apache.avro" name="avro" conf="compile, runtime" rev="1.8.8" rev-constraint-default="1.8.8" rev-constraint-dynamic="1.8.8" callerrev="1.7.4"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-common" conf="default, compile, runtime, master" rev="1.8.3" rev-constraint-default="1.8.3" rev-constraint-dynamic="1.9.13" callerrev="2.7.3"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="1.8.3" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="1.9.13"/>
+				<caller organisation="com.sun.jersey" name="jersey-json" conf="compile, runtime" rev="1.8.3" rev-constraint-default="1.8.3" rev-constraint-dynamic="1.8.3" callerrev="1.9"/>
+				<caller organisation="org.codehaus.jackson" name="jackson-xc" conf="compile, runtime" rev="1.8.3" rev-constraint-default="1.8.3" rev-constraint-dynamic="1.8.3" callerrev="1.8.3"/>
+				<caller organisation="org.codehaus.jackson" name="jackson-jaxrs" conf="compile, runtime" rev="1.8.3" rev-constraint-default="1.8.3" rev-constraint-dynamic="1.8.3" callerrev="1.8.3"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-common" conf="default, compile, runtime, master" rev="1.8.3" rev-constraint-default="1.8.3" rev-constraint-dynamic="1.9.13" callerrev="2.7.3"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.codehaus.jackson" name="jackson-core-asl">
+			<revision name="1.9.13" status="release" pubdate="20130715110730" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://jackson.codehaus.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="62">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2438" time="0" location="/Users/peiyuchao/.ivy2/cache/org.codehaus.jackson/jackson-core-asl/ivy-1.9.13.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/codehaus/jackson/jackson-core-asl/1.9.13/jackson-core-asl-1.9.13.pom"/>
+				<caller organisation="com.sun.jersey" name="jersey-json" conf="compile, runtime" rev="1.8.3" rev-constraint-default="1.8.3" rev-constraint-dynamic="1.8.3" callerrev="1.9"/>
+				<caller organisation="org.codehaus.jackson" name="jackson-mapper-asl" conf="compile, runtime" rev="1.8.8" rev-constraint-default="1.8.8" rev-constraint-dynamic="1.8.8" callerrev="1.8.8"/>
+				<caller organisation="org.codehaus.jackson" name="jackson-xc" conf="compile, runtime" rev="1.8.3" rev-constraint-default="1.8.3" rev-constraint-dynamic="1.8.3" callerrev="1.8.3"/>
+				<caller organisation="org.codehaus.jackson" name="jackson-jaxrs" conf="compile, runtime" rev="1.8.3" rev-constraint-default="1.8.3" rev-constraint-dynamic="1.8.3" callerrev="1.8.3"/>
+				<caller organisation="org.apache.avro" name="avro" conf="compile, runtime" rev="1.8.8" rev-constraint-default="1.8.8" rev-constraint-dynamic="1.8.8" callerrev="1.7.4"/>
+				<caller organisation="org.codehaus.jackson" name="jackson-mapper-asl" conf="compile" rev="1.9.13" rev-constraint-default="1.9.13" rev-constraint-dynamic="1.9.13" callerrev="1.9.13"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-common" conf="default, compile, runtime, master" rev="1.9.13" rev-constraint-default="1.9.13" rev-constraint-dynamic="1.9.13" callerrev="2.7.3"/>
+				<artifacts>
+					<artifact name="jackson-core-asl" type="jar" ext="jar" status="no" details="" size="232248" time="0" location="/Users/peiyuchao/.ivy2/cache/org.codehaus.jackson/jackson-core-asl/jars/jackson-core-asl-1.9.13.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/codehaus/jackson/jackson-core-asl/1.9.13/jackson-core-asl-1.9.13.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="1.8.8" status="release" pubdate="20120121092420" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="http://jackson.codehaus.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2437" time="0" location="/Users/peiyuchao/.ivy2/cache/org.codehaus.jackson/jackson-core-asl/ivy-1.8.8.xml" searched="false" origin-is-local="false" origin-location="http://repo2.maven.org/maven2/org/codehaus/jackson/jackson-core-asl/1.8.8/jackson-core-asl-1.8.8.pom"/>
+				<evicted-by rev="1.9.13"/>
+				<caller organisation="com.sun.jersey" name="jersey-json" conf="compile, runtime" rev="1.8.3" rev-constraint-default="1.8.3" rev-constraint-dynamic="1.8.3" callerrev="1.9"/>
+				<caller organisation="org.codehaus.jackson" name="jackson-mapper-asl" conf="compile, runtime" rev="1.8.8" rev-constraint-default="1.8.8" rev-constraint-dynamic="1.8.8" callerrev="1.8.8"/>
+				<caller organisation="org.codehaus.jackson" name="jackson-xc" conf="compile, runtime" rev="1.8.3" rev-constraint-default="1.8.3" rev-constraint-dynamic="1.8.3" callerrev="1.8.3"/>
+				<caller organisation="org.codehaus.jackson" name="jackson-jaxrs" conf="compile, runtime" rev="1.8.3" rev-constraint-default="1.8.3" rev-constraint-dynamic="1.8.3" callerrev="1.8.3"/>
+				<caller organisation="org.apache.avro" name="avro" conf="compile, runtime" rev="1.8.8" rev-constraint-default="1.8.8" rev-constraint-dynamic="1.8.8" callerrev="1.7.4"/>
+				<caller organisation="org.codehaus.jackson" name="jackson-mapper-asl" conf="compile" rev="1.9.13" rev-constraint-default="1.9.13" rev-constraint-dynamic="1.9.13" callerrev="1.9.13"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-common" conf="default, compile, runtime, master" rev="1.8.3" rev-constraint-default="1.8.3" rev-constraint-dynamic="1.9.13" callerrev="2.7.3"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="1.8.3" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="1.9.13"/>
+				<caller organisation="com.sun.jersey" name="jersey-json" conf="compile, runtime" rev="1.8.3" rev-constraint-default="1.8.3" rev-constraint-dynamic="1.8.3" callerrev="1.9"/>
+				<caller organisation="org.codehaus.jackson" name="jackson-mapper-asl" conf="compile, runtime" rev="1.8.8" rev-constraint-default="1.8.8" rev-constraint-dynamic="1.8.8" callerrev="1.8.8"/>
+				<caller organisation="org.codehaus.jackson" name="jackson-xc" conf="compile, runtime" rev="1.8.3" rev-constraint-default="1.8.3" rev-constraint-dynamic="1.8.3" callerrev="1.8.3"/>
+				<caller organisation="org.codehaus.jackson" name="jackson-jaxrs" conf="compile, runtime" rev="1.8.3" rev-constraint-default="1.8.3" rev-constraint-dynamic="1.8.3" callerrev="1.8.3"/>
+				<caller organisation="org.apache.avro" name="avro" conf="compile, runtime" rev="1.8.8" rev-constraint-default="1.8.8" rev-constraint-dynamic="1.8.8" callerrev="1.7.4"/>
+				<caller organisation="org.codehaus.jackson" name="jackson-mapper-asl" conf="compile, runtime" rev="1.8.3" rev-constraint-default="1.8.3" rev-constraint-dynamic="1.9.13" callerrev="1.9.13"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-common" conf="default, compile, runtime, master" rev="1.8.3" rev-constraint-default="1.8.3" rev-constraint-dynamic="1.9.13" callerrev="2.7.3"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.slf4j" name="slf4j-log4j12">
+			<revision name="1.7.10" status="release" pubdate="20150107041200" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="78">
+				<metadata-artifact status="no" details="" size="4846" time="0" location="/Users/peiyuchao/.ivy2/cache/org.slf4j/slf4j-log4j12/ivy-1.7.10.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/slf4j/slf4j-log4j12/1.7.10/slf4j-log4j12-1.7.10.pom"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-auth" conf="compile, runtime" rev="1.7.10" rev-constraint-default="1.7.10" rev-constraint-dynamic="1.7.10" callerrev="2.7.3"/>
+				<caller organisation="org.apache.zookeeper" name="zookeeper" conf="compile, runtime" rev="1.7.5" rev-constraint-default="1.7.5" rev-constraint-dynamic="1.7.5" callerrev="3.4.5-cdh5.8.2"/>
+				<caller organisation="org.apache.zookeeper" name="zookeeper" conf="compile, runtime" rev="1.7.10" rev-constraint-default="1.7.10" rev-constraint-dynamic="1.6.1" callerrev="3.4.6"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-common" conf="default, compile, runtime, master" rev="1.7.10" rev-constraint-default="1.7.10" rev-constraint-dynamic="1.7.10" callerrev="2.7.3"/>
+				<artifacts>
+					<artifact name="slf4j-log4j12" type="jar" ext="jar" status="no" details="" size="8866" time="0" location="/Users/peiyuchao/.ivy2/cache/org.slf4j/slf4j-log4j12/jars/slf4j-log4j12-1.7.10.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/slf4j/slf4j-log4j12/1.7.10/slf4j-log4j12-1.7.10.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="1.7.5" status="release" pubdate="20130326045252" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<metadata-artifact status="no" details="" size="4653" time="0" location="/Users/peiyuchao/.ivy2/cache/org.slf4j/slf4j-log4j12/ivy-1.7.5.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/slf4j/slf4j-log4j12/1.7.5/slf4j-log4j12-1.7.5.pom"/>
+				<evicted-by rev="1.7.10"/>
+				<caller organisation="org.apache.zookeeper" name="zookeeper" conf="compile, runtime" rev="1.7.5" rev-constraint-default="1.7.5" rev-constraint-dynamic="1.7.5" callerrev="3.4.5-cdh5.8.2"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.slf4j" name="slf4j-api">
+			<revision name="1.7.10" status="release" pubdate="20150107041100" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="61">
+				<metadata-artifact status="no" details="" size="4667" time="0" location="/Users/peiyuchao/.ivy2/cache/org.slf4j/slf4j-api/ivy-1.7.10.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/slf4j/slf4j-api/1.7.10/slf4j-api-1.7.10.pom"/>
+				<caller organisation="org.apache.directory.api" name="api-asn1-api" conf="compile, runtime" rev="1.7.10" rev-constraint-default="1.7.10" rev-constraint-dynamic="1.7.5" callerrev="1.0.0-M20"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-auth" conf="compile, runtime" rev="1.7.10" rev-constraint-default="1.7.10" rev-constraint-dynamic="1.7.10" callerrev="2.7.3"/>
+				<caller organisation="org.slf4j" name="slf4j-log4j12" conf="compile, runtime" rev="1.7.10" rev-constraint-default="1.7.10" rev-constraint-dynamic="1.7.10" callerrev="1.7.10"/>
+				<caller organisation="com.yammer.metrics" name="metrics-core" conf="compile, runtime" rev="1.7.2" rev-constraint-default="1.7.2" rev-constraint-dynamic="1.7.2" callerrev="2.2.0"/>
+				<caller organisation="org.apache.directory.server" name="apacheds-i18n" conf="compile, runtime" rev="1.7.10" rev-constraint-default="1.7.10" rev-constraint-dynamic="1.7.5" callerrev="2.0.0-M15"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-common" conf="default, compile, runtime, master" rev="1.7.10" rev-constraint-default="1.7.10" rev-constraint-dynamic="1.7.10" callerrev="2.7.3"/>
+				<caller organisation="org.apache.zookeeper" name="zookeeper" conf="compile, runtime" rev="1.7.5" rev-constraint-default="1.7.5" rev-constraint-dynamic="1.7.5" callerrev="3.4.5-cdh5.8.2"/>
+				<caller organisation="org.apache.directory.api" name="api-util" conf="compile, runtime" rev="1.7.10" rev-constraint-default="1.7.10" rev-constraint-dynamic="1.7.5" callerrev="1.0.0-M20"/>
+				<caller organisation="org.apache.zookeeper" name="zookeeper" conf="compile, runtime" rev="1.7.10" rev-constraint-default="1.7.10" rev-constraint-dynamic="1.6.1" callerrev="3.4.6"/>
+				<caller organisation="org.apache.directory.server" name="apacheds-kerberos-codec" conf="compile, runtime" rev="1.7.10" rev-constraint-default="1.7.10" rev-constraint-dynamic="1.7.5" callerrev="2.0.0-M15"/>
+				<caller organisation="org.apache.avro" name="avro" conf="compile, runtime" rev="1.6.4" rev-constraint-default="1.6.4" rev-constraint-dynamic="1.6.4" callerrev="1.7.4"/>
+				<caller organisation="org.apache.curator" name="curator-client" conf="compile, runtime" rev="1.7.10" rev-constraint-default="1.7.10" rev-constraint-dynamic="1.7.6" callerrev="2.7.1"/>
+				<caller organisation="org.slf4j" name="slf4j-log4j12" conf="compile, runtime" rev="1.7.5" rev-constraint-default="1.7.5" rev-constraint-dynamic="1.7.5" callerrev="1.7.5"/>
+				<artifacts>
+					<artifact name="slf4j-api" type="jar" ext="jar" status="no" details="" size="32119" time="0" location="/Users/peiyuchao/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.10.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/slf4j/slf4j-api/1.7.10/slf4j-api-1.7.10.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="1.7.5" status="release" pubdate="20130326045215" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<metadata-artifact status="no" details="" size="4475" time="0" location="/Users/peiyuchao/.ivy2/cache/org.slf4j/slf4j-api/ivy-1.7.5.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.pom"/>
+				<evicted-by rev="1.7.10"/>
+				<caller organisation="org.apache.zookeeper" name="zookeeper" conf="compile, runtime" rev="1.7.5" rev-constraint-default="1.7.5" rev-constraint-dynamic="1.7.5" callerrev="3.4.5-cdh5.8.2"/>
+				<caller organisation="com.yammer.metrics" name="metrics-core" conf="compile, runtime" rev="1.7.2" rev-constraint-default="1.7.2" rev-constraint-dynamic="1.7.2" callerrev="2.2.0"/>
+				<caller organisation="org.slf4j" name="slf4j-log4j12" conf="compile, runtime" rev="1.7.5" rev-constraint-default="1.7.5" rev-constraint-dynamic="1.7.5" callerrev="1.7.5"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="1.6.4" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="1.7.10"/>
+				<caller organisation="org.apache.avro" name="avro" conf="compile, runtime" rev="1.6.4" rev-constraint-default="1.6.4" rev-constraint-dynamic="1.6.4" callerrev="1.7.4"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="1.7.2" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="1.7.5"/>
+				<caller organisation="com.yammer.metrics" name="metrics-core" conf="compile, runtime" rev="1.7.2" rev-constraint-default="1.7.2" rev-constraint-dynamic="1.7.2" callerrev="2.2.0"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-configuration" name="commons-configuration">
+			<revision name="1.6" status="release" pubdate="20090205034444" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/${pom.artifactId.substring(8)}/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="57">
+				<license name="The Apache Software License, Version 2.0" url="/LICENSE.txt"/>
+				<metadata-artifact status="no" details="" size="5678" time="0" location="/Users/peiyuchao/.ivy2/cache/commons-configuration/commons-configuration/ivy-1.6.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/commons-configuration/commons-configuration/1.6/commons-configuration-1.6.pom"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-common" conf="default, compile, runtime, master" rev="1.6" rev-constraint-default="1.6" rev-constraint-dynamic="1.6" callerrev="2.7.3"/>
+				<artifacts>
+					<artifact name="commons-configuration" type="jar" ext="jar" status="no" details="" size="298829" time="0" location="/Users/peiyuchao/.ivy2/cache/commons-configuration/commons-configuration/jars/commons-configuration-1.6.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/commons-configuration/commons-configuration/1.6/commons-configuration-1.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-beanutils" name="commons-beanutils-core">
+			<revision name="1.8.0" status="release" pubdate="20080901021344" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/beanutils/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="60">
+				<metadata-artifact status="no" details="" size="2556" time="0" location="/Users/peiyuchao/.ivy2/cache/commons-beanutils/commons-beanutils-core/ivy-1.8.0.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/commons-beanutils/commons-beanutils-core/1.8.0/commons-beanutils-core-1.8.0.pom"/>
+				<caller organisation="commons-configuration" name="commons-configuration" conf="compile, runtime" rev="1.8.0" rev-constraint-default="1.8.0" rev-constraint-dynamic="1.8.0" callerrev="1.6"/>
+				<artifacts>
+					<artifact name="commons-beanutils-core" type="jar" ext="jar" status="no" details="" size="206035" time="0" location="/Users/peiyuchao/.ivy2/cache/commons-beanutils/commons-beanutils-core/jars/commons-beanutils-core-1.8.0.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/commons-beanutils/commons-beanutils-core/1.8.0/commons-beanutils-core-1.8.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-digester" name="commons-digester">
+			<revision name="1.8" status="release" pubdate="20080831194517" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://jakarta.apache.org/commons/digester/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="58">
+				<license name="The Apache Software License, Version 2.0" url="/LICENSE.txt"/>
+				<metadata-artifact status="no" details="" size="3225" time="0" location="/Users/peiyuchao/.ivy2/cache/commons-digester/commons-digester/ivy-1.8.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/commons-digester/commons-digester/1.8/commons-digester-1.8.pom"/>
+				<caller organisation="commons-configuration" name="commons-configuration" conf="compile, runtime" rev="1.8" rev-constraint-default="1.8" rev-constraint-dynamic="1.8" callerrev="1.6"/>
+				<artifacts>
+					<artifact name="commons-digester" type="jar" ext="jar" status="no" details="" size="143602" time="0" location="/Users/peiyuchao/.ivy2/cache/commons-digester/commons-digester/jars/commons-digester-1.8.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/commons-digester/commons-digester/1.8/commons-digester-1.8.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-beanutils" name="commons-beanutils">
+			<revision name="1.7.0" status="release" pubdate="20080831194605" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="59">
+				<metadata-artifact status="no" details="" size="2394" time="0" location="/Users/peiyuchao/.ivy2/cache/commons-beanutils/commons-beanutils/ivy-1.7.0.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/commons-beanutils/commons-beanutils/1.7.0/commons-beanutils-1.7.0.pom"/>
+				<caller organisation="commons-digester" name="commons-digester" conf="compile, runtime" rev="1.7.0" rev-constraint-default="1.7.0" rev-constraint-dynamic="1.7.0" callerrev="1.8"/>
+				<artifacts>
+					<artifact name="commons-beanutils" type="jar" ext="jar" status="no" details="" size="188671" time="0" location="/Users/peiyuchao/.ivy2/cache/commons-beanutils/commons-beanutils/jars/commons-beanutils-1.7.0.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/commons-beanutils/commons-beanutils/1.7.0/commons-beanutils-1.7.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="net.java.dev.jets3t" name="jets3t">
+			<revision name="0.9.0" status="release" pubdate="20120312201824" resolver="cloudera-release" artresolver="cloudera-release" homepage="http://www.jets3t.org" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="55">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="successful" details="" size="2436" time="1079" location="/Users/peiyuchao/.ivy2/cache/net.java.dev.jets3t/jets3t/ivy-0.9.0.xml" searched="true" original-local-location="/Users/peiyuchao/.ivy2/cache/net.java.dev.jets3t/jets3t/ivy-0.9.0.xml.original" origin-is-local="false" origin-location="https://repository.cloudera.com/artifactory/cloudera-repos/net/java/dev/jets3t/jets3t/0.9.0/jets3t-0.9.0.pom"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-core" conf="default, compile, runtime, master" rev="0.7.1" rev-constraint-default="0.7.1" rev-constraint-dynamic="0.7.1" callerrev="0.20.2"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-common" conf="default, compile, runtime, master" rev="0.9.0" rev-constraint-default="0.9.0" rev-constraint-dynamic="0.9.0" callerrev="2.7.3"/>
+				<artifacts>
+					<artifact name="jets3t" type="jar" ext="jar" status="successful" details="" size="539735" time="6787" location="/Users/peiyuchao/.ivy2/cache/net.java.dev.jets3t/jets3t/jars/jets3t-0.9.0.jar">
+						<origin-location is-local="false" location="https://repository.cloudera.com/artifactory/cloudera-repos/net/java/dev/jets3t/jets3t/0.9.0/jets3t-0.9.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="0.7.1" status="release" pubdate="20090510132320" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="http://jets3t.s3.amazonaws.com/index.html" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="3074" time="0" location="/Users/peiyuchao/.ivy2/cache/net.java.dev.jets3t/jets3t/ivy-0.7.1.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/net/java/dev/jets3t/jets3t/0.7.1/jets3t-0.7.1.pom"/>
+				<evicted-by rev="0.9.0"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-core" conf="default, compile, runtime, master" rev="0.7.1" rev-constraint-default="0.7.1" rev-constraint-dynamic="0.7.1" callerrev="0.20.2"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.jamesmurty.utils" name="java-xmlbuilder">
+			<revision name="0.4" status="release" pubdate="20101027090304" resolver="cloudera-release" artresolver="cloudera-release" homepage="http://code.google.com/p/java-xmlbuilder/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="56">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="successful" details="" size="2980" time="1072" location="/Users/peiyuchao/.ivy2/cache/com.jamesmurty.utils/java-xmlbuilder/ivy-0.4.xml" searched="true" original-local-location="/Users/peiyuchao/.ivy2/cache/com.jamesmurty.utils/java-xmlbuilder/ivy-0.4.xml.original" origin-is-local="false" origin-location="https://repository.cloudera.com/artifactory/cloudera-repos/com/jamesmurty/utils/java-xmlbuilder/0.4/java-xmlbuilder-0.4.pom"/>
+				<caller organisation="net.java.dev.jets3t" name="jets3t" conf="compile, runtime" rev="0.4" rev-constraint-default="0.4" rev-constraint-dynamic="0.4" callerrev="0.9.0"/>
+				<artifacts>
+					<artifact name="java-xmlbuilder" type="jar" ext="jar" status="successful" details="" size="18490" time="1114" location="/Users/peiyuchao/.ivy2/cache/com.jamesmurty.utils/java-xmlbuilder/jars/java-xmlbuilder-0.4.jar">
+						<origin-location is-local="false" location="https://repository.cloudera.com/artifactory/cloudera-repos/com/jamesmurty/utils/java-xmlbuilder/0.4/java-xmlbuilder-0.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.sun.jersey" name="jersey-server">
+			<revision name="1.9" status="release" pubdate="20110902191727" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="53">
+				<metadata-artifact status="no" details="" size="6321" time="0" location="/Users/peiyuchao/.ivy2/cache/com.sun.jersey/jersey-server/ivy-1.9.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/com/sun/jersey/jersey-server/1.9/jersey-server-1.9.pom"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-common" conf="default, compile, runtime, master" rev="1.9" rev-constraint-default="1.9" rev-constraint-dynamic="1.9" callerrev="2.7.3"/>
+				<artifacts>
+					<artifact name="jersey-server" type="bundle" ext="jar" status="no" details="" size="713089" time="0" location="/Users/peiyuchao/.ivy2/cache/com.sun.jersey/jersey-server/bundles/jersey-server-1.9.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/com/sun/jersey/jersey-server/1.9/jersey-server-1.9.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="asm" name="asm">
+			<revision name="3.1" status="release" pubdate="20080120183126" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="54">
+				<metadata-artifact status="no" details="" size="2800" time="0" location="/Users/peiyuchao/.ivy2/cache/asm/asm/ivy-3.1.xml" searched="false" origin-is-local="false" origin-location="http://repo2.maven.org/maven2/asm/asm/3.1/asm-3.1.pom"/>
+				<caller organisation="com.sun.jersey" name="jersey-server" conf="compile, runtime" rev="3.1" rev-constraint-default="3.1" rev-constraint-dynamic="3.1" callerrev="1.9"/>
+				<artifacts>
+					<artifact name="asm" type="jar" ext="jar" status="no" details="" size="43033" time="0" location="/Users/peiyuchao/.ivy2/cache/asm/asm/jars/asm-3.1.jar">
+						<origin-location is-local="false" location="http://repo2.maven.org/maven2/asm/asm/3.1/asm-3.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.sun.jersey" name="jersey-json">
+			<revision name="1.9" status="release" pubdate="20110902192658" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="45">
+				<metadata-artifact status="no" details="" size="5817" time="0" location="/Users/peiyuchao/.ivy2/cache/com.sun.jersey/jersey-json/ivy-1.9.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/com/sun/jersey/jersey-json/1.9/jersey-json-1.9.pom"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-common" conf="default, compile, runtime, master" rev="1.9" rev-constraint-default="1.9" rev-constraint-dynamic="1.9" callerrev="2.7.3"/>
+				<artifacts>
+					<artifact name="jersey-json" type="bundle" ext="jar" status="no" details="" size="147952" time="0" location="/Users/peiyuchao/.ivy2/cache/com.sun.jersey/jersey-json/bundles/jersey-json-1.9.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/com/sun/jersey/jersey-json/1.9/jersey-json-1.9.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.codehaus.jackson" name="jackson-xc">
+			<revision name="1.8.3" status="release" pubdate="20110709132339" resolver="cloudera-release" artresolver="cloudera-release" homepage="http://jackson.codehaus.org" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="52">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<license name="GNU Lesser General Public License (LGPL), Version 2.1" url="http://www.fsf.org/licensing/licenses/lgpl.txt"/>
+				<metadata-artifact status="successful" details="" size="1641" time="1439" location="/Users/peiyuchao/.ivy2/cache/org.codehaus.jackson/jackson-xc/ivy-1.8.3.xml" searched="true" original-local-location="/Users/peiyuchao/.ivy2/cache/org.codehaus.jackson/jackson-xc/ivy-1.8.3.xml.original" origin-is-local="false" origin-location="https://repository.cloudera.com/artifactory/cloudera-repos/org/codehaus/jackson/jackson-xc/1.8.3/jackson-xc-1.8.3.pom"/>
+				<caller organisation="com.sun.jersey" name="jersey-json" conf="compile, runtime" rev="1.8.3" rev-constraint-default="1.8.3" rev-constraint-dynamic="1.8.3" callerrev="1.9"/>
+				<artifacts>
+					<artifact name="jackson-xc" type="jar" ext="jar" status="successful" details="" size="32319" time="2485" location="/Users/peiyuchao/.ivy2/cache/org.codehaus.jackson/jackson-xc/jars/jackson-xc-1.8.3.jar">
+						<origin-location is-local="false" location="https://repository.cloudera.com/artifactory/cloudera-repos/org/codehaus/jackson/jackson-xc/1.8.3/jackson-xc-1.8.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.codehaus.jackson" name="jackson-jaxrs">
+			<revision name="1.8.3" status="release" pubdate="20110709132329" resolver="cloudera-release" artresolver="cloudera-release" homepage="http://jackson.codehaus.org" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="51">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<license name="GNU Lesser General Public License (LGPL), Version 2.1" url="http://www.fsf.org/licensing/licenses/lgpl.txt"/>
+				<metadata-artifact status="successful" details="" size="1637" time="1162" location="/Users/peiyuchao/.ivy2/cache/org.codehaus.jackson/jackson-jaxrs/ivy-1.8.3.xml" searched="true" original-local-location="/Users/peiyuchao/.ivy2/cache/org.codehaus.jackson/jackson-jaxrs/ivy-1.8.3.xml.original" origin-is-local="false" origin-location="https://repository.cloudera.com/artifactory/cloudera-repos/org/codehaus/jackson/jackson-jaxrs/1.8.3/jackson-jaxrs-1.8.3.pom"/>
+				<caller organisation="com.sun.jersey" name="jersey-json" conf="compile, runtime" rev="1.8.3" rev-constraint-default="1.8.3" rev-constraint-dynamic="1.8.3" callerrev="1.9"/>
+				<artifacts>
+					<artifact name="jackson-jaxrs" type="jar" ext="jar" status="successful" details="" size="17883" time="2219" location="/Users/peiyuchao/.ivy2/cache/org.codehaus.jackson/jackson-jaxrs/jars/jackson-jaxrs-1.8.3.jar">
+						<origin-location is-local="false" location="https://repository.cloudera.com/artifactory/cloudera-repos/org/codehaus/jackson/jackson-jaxrs/1.8.3/jackson-jaxrs-1.8.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.sun.xml.bind" name="jaxb-impl">
+			<revision name="2.2.3-1" status="release" pubdate="20110118183154" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://jaxb.java.net/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="47">
+				<license name="CDDL 1.1" url="https://glassfish.java.net/public/CDDL+GPL_1_1.html"/>
+				<license name="GPL2 w/ CPE" url="https://glassfish.java.net/public/CDDL+GPL_1_1.html"/>
+				<metadata-artifact status="no" details="" size="2740" time="0" location="/Users/peiyuchao/.ivy2/cache/com.sun.xml.bind/jaxb-impl/ivy-2.2.3-1.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/com/sun/xml/bind/jaxb-impl/2.2.3-1/jaxb-impl-2.2.3-1.pom"/>
+				<caller organisation="com.sun.jersey" name="jersey-json" conf="compile, runtime" rev="2.2.3-1" rev-constraint-default="2.2.3-1" rev-constraint-dynamic="2.2.3-1" callerrev="1.9"/>
+				<artifacts>
+					<artifact name="jaxb-impl" type="jar" ext="jar" status="no" details="" size="890168" time="0" location="/Users/peiyuchao/.ivy2/cache/com.sun.xml.bind/jaxb-impl/jars/jaxb-impl-2.2.3-1.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/com/sun/xml/bind/jaxb-impl/2.2.3-1/jaxb-impl-2.2.3-1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="javax.xml.bind" name="jaxb-api">
+			<revision name="2.2.2" status="release" pubdate="20101213114445" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://jaxb.dev.java.net/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="48">
+				<license name="CDDL 1.1" url="https://glassfish.dev.java.net/public/CDDL+GPL_1_1.html"/>
+				<license name="GPL2 w/ CPE" url="https://glassfish.dev.java.net/public/CDDL+GPL_1_1.html"/>
+				<metadata-artifact status="no" details="" size="2871" time="0" location="/Users/peiyuchao/.ivy2/cache/javax.xml.bind/jaxb-api/ivy-2.2.2.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/javax/xml/bind/jaxb-api/2.2.2/jaxb-api-2.2.2.pom"/>
+				<caller organisation="com.sun.xml.bind" name="jaxb-impl" conf="compile, runtime" rev="2.2.2" rev-constraint-default="2.2.2" rev-constraint-dynamic="2.2.2" callerrev="2.2.3-1"/>
+				<artifacts>
+					<artifact name="jaxb-api" type="jar" ext="jar" status="no" details="" size="105134" time="0" location="/Users/peiyuchao/.ivy2/cache/javax.xml.bind/jaxb-api/jars/jaxb-api-2.2.2.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/javax/xml/bind/jaxb-api/2.2.2/jaxb-api-2.2.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="javax.activation" name="activation">
+			<revision name="1.1" status="release" pubdate="20060503074829" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://java.sun.com/products/javabeans/jaf/index.jsp" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="50">
+				<license name="Common Development and Distribution License (CDDL) v1.0" url="https://glassfish.dev.java.net/public/CDDLv1.0.html"/>
+				<metadata-artifact status="no" details="" size="2718" time="0" location="/Users/peiyuchao/.ivy2/cache/javax.activation/activation/ivy-1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/javax/activation/activation/1.1/activation-1.1.pom"/>
+				<caller organisation="javax.xml.bind" name="jaxb-api" conf="compile, runtime" rev="1.1" rev-constraint-default="1.1" rev-constraint-dynamic="1.1" callerrev="2.2.2"/>
+				<artifacts>
+					<artifact name="activation" type="jar" ext="jar" status="no" details="" size="62983" time="0" location="/Users/peiyuchao/.ivy2/cache/javax.activation/activation/jars/activation-1.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javax/activation/activation/1.1/activation-1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="javax.xml.stream" name="stax-api">
+			<revision name="1.0-2" status="release" pubdate="20081005015903" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="49">
+				<license name="GNU General Public Library" url="http://www.gnu.org/licenses/gpl.txt"/>
+				<license name="COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL) Version 1.0" url="http://www.sun.com/cddl/cddl.html"/>
+				<metadata-artifact status="no" details="" size="2527" time="0" location="/Users/peiyuchao/.ivy2/cache/javax.xml.stream/stax-api/ivy-1.0-2.xml" searched="false" origin-is-local="false" origin-location="http://repo2.maven.org/maven2/javax/xml/stream/stax-api/1.0-2/stax-api-1.0-2.pom"/>
+				<caller organisation="javax.xml.bind" name="jaxb-api" conf="compile, runtime" rev="1.0-2" rev-constraint-default="1.0-2" rev-constraint-dynamic="1.0-2" callerrev="2.2.2"/>
+				<artifacts>
+					<artifact name="stax-api" type="jar" ext="jar" status="no" details="" size="23346" time="0" location="/Users/peiyuchao/.ivy2/cache/javax.xml.stream/stax-api/jars/stax-api-1.0-2.jar">
+						<origin-location is-local="false" location="http://repo2.maven.org/maven2/javax/xml/stream/stax-api/1.0-2/stax-api-1.0-2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.codehaus.jettison" name="jettison">
+			<revision name="1.1" status="release" pubdate="20090421005000" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="46">
+				<metadata-artifact status="no" details="" size="2745" time="0" location="/Users/peiyuchao/.ivy2/cache/org.codehaus.jettison/jettison/ivy-1.1.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/codehaus/jettison/jettison/1.1/jettison-1.1.pom"/>
+				<caller organisation="com.sun.jersey" name="jersey-json" conf="compile, runtime" rev="1.1" rev-constraint-default="1.1" rev-constraint-dynamic="1.1" callerrev="1.9"/>
+				<artifacts>
+					<artifact name="jettison" type="bundle" ext="jar" status="no" details="" size="67758" time="0" location="/Users/peiyuchao/.ivy2/cache/org.codehaus.jettison/jettison/bundles/jettison-1.1.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/codehaus/jettison/jettison/1.1/jettison-1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.sun.jersey" name="jersey-core">
+			<revision name="1.9" status="release" pubdate="20110902191653" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="44">
+				<metadata-artifact status="no" details="" size="5441" time="0" location="/Users/peiyuchao/.ivy2/cache/com.sun.jersey/jersey-core/ivy-1.9.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/com/sun/jersey/jersey-core/1.9/jersey-core-1.9.pom"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-common" conf="default, compile, runtime, master" rev="1.9" rev-constraint-default="1.9" rev-constraint-dynamic="1.9" callerrev="2.7.3"/>
+				<artifacts>
+					<artifact name="jersey-core" type="bundle" ext="jar" status="no" details="" size="458739" time="0" location="/Users/peiyuchao/.ivy2/cache/com.sun.jersey/jersey-core/bundles/jersey-core-1.9.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/com/sun/jersey/jersey-core/1.9/jersey-core-1.9.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="javax.servlet.jsp" name="jsp-api">
+			<revision name="2.1" status="release" pubdate="20060717190956" resolver="cloudera-release" artresolver="cloudera-release" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="85">
+				<metadata-artifact status="successful" details="" size="157" time="1553" location="/Users/peiyuchao/.ivy2/cache/javax.servlet.jsp/jsp-api/ivy-2.1.xml" searched="true" original-local-location="/Users/peiyuchao/.ivy2/cache/javax.servlet.jsp/jsp-api/ivy-2.1.xml.original" origin-is-local="false" origin-location="https://repository.cloudera.com/artifactory/cloudera-repos/javax/servlet/jsp/jsp-api/2.1/jsp-api-2.1.pom"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-common" conf="default, compile, runtime, master" rev="2.1" rev-constraint-default="2.1" rev-constraint-dynamic="2.1" callerrev="2.7.3"/>
+				<artifacts>
+					<artifact name="jsp-api" type="jar" ext="jar" status="successful" details="" size="100636" time="9375" location="/Users/peiyuchao/.ivy2/cache/javax.servlet.jsp/jsp-api/jars/jsp-api-2.1.jar">
+						<origin-location is-local="false" location="https://repository.cloudera.com/artifactory/cloudera-repos/javax/servlet/jsp/jsp-api/2.1/jsp-api-2.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.mortbay.jetty" name="jetty">
+			<revision name="6.1.26" status="release" pubdate="20101111054054" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="41">
+				<metadata-artifact status="no" details="" size="7219" time="0" location="/Users/peiyuchao/.ivy2/cache/org.mortbay.jetty/jetty/ivy-6.1.26.xml" searched="false" origin-is-local="false" origin-location="http://repo2.maven.org/maven2/org/mortbay/jetty/jetty/6.1.26/jetty-6.1.26.pom"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-core" conf="default, compile, runtime, master" rev="6.1.14" rev-constraint-default="6.1.14" rev-constraint-dynamic="6.1.14" callerrev="0.20.2"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-common" conf="default, compile, runtime, master" rev="6.1.26" rev-constraint-default="6.1.26" rev-constraint-dynamic="6.1.26" callerrev="2.7.3"/>
+				<artifacts>
+					<artifact name="jetty" type="jar" ext="jar" status="no" details="" size="539912" time="0" location="/Users/peiyuchao/.ivy2/cache/org.mortbay.jetty/jetty/jars/jetty-6.1.26.jar">
+						<origin-location is-local="false" location="http://repo2.maven.org/maven2/org/mortbay/jetty/jetty/6.1.26/jetty-6.1.26.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="6.1.14" status="release" pubdate="20081114084945" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<metadata-artifact status="no" details="" size="6065" time="0" location="/Users/peiyuchao/.ivy2/cache/org.mortbay.jetty/jetty/ivy-6.1.14.xml" searched="false" origin-is-local="false" origin-location="http://repo2.maven.org/maven2/org/mortbay/jetty/jetty/6.1.14/jetty-6.1.14.pom"/>
+				<evicted-by rev="6.1.26"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-core" conf="default, compile, runtime, master" rev="6.1.14" rev-constraint-default="6.1.14" rev-constraint-dynamic="6.1.14" callerrev="0.20.2"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.mortbay.jetty" name="jetty-util">
+			<revision name="6.1.26" status="release" pubdate="20101111053809" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="42">
+				<metadata-artifact status="no" details="" size="7156" time="0" location="/Users/peiyuchao/.ivy2/cache/org.mortbay.jetty/jetty-util/ivy-6.1.26.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/mortbay/jetty/jetty-util/6.1.26/jetty-util-6.1.26.pom"/>
+				<caller organisation="org.mortbay.jetty" name="jetty" conf="compile, runtime" rev="6.1.26" rev-constraint-default="6.1.26" rev-constraint-dynamic="6.1.26" callerrev="6.1.26"/>
+				<caller organisation="org.apache.hbase" name="hbase-common" conf="default, compile, runtime, master" rev="6.1.26.cloudera.4" rev-constraint-default="6.1.26.cloudera.4" rev-constraint-dynamic="6.1.26.cloudera.4" callerrev="1.2.0-cdh5.8.2"/>
+				<caller organisation="org.mortbay.jetty" name="jetty" conf="compile, runtime" rev="6.1.14" rev-constraint-default="6.1.14" rev-constraint-dynamic="6.1.14" callerrev="6.1.14"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-core" conf="default, compile, runtime, master" rev="6.1.14" rev-constraint-default="6.1.14" rev-constraint-dynamic="6.1.14" callerrev="0.20.2"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-common" conf="default, compile, runtime, master" rev="6.1.26" rev-constraint-default="6.1.26" rev-constraint-dynamic="6.1.26" callerrev="2.7.3"/>
+				<artifacts>
+					<artifact name="jetty-util" type="jar" ext="jar" status="no" details="" size="177131" time="0" location="/Users/peiyuchao/.ivy2/cache/org.mortbay.jetty/jetty-util/jars/jetty-util-6.1.26.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/mortbay/jetty/jetty-util/6.1.26/jetty-util-6.1.26.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="6.1.26.cloudera.4" status="release" pubdate="20141112020729" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<metadata-artifact status="no" details="" size="7167" time="0" location="/Users/peiyuchao/.ivy2/cache/org.mortbay.jetty/jetty-util/ivy-6.1.26.cloudera.4.xml" searched="false" origin-is-local="false" origin-location="https://repository.cloudera.com/artifactory/cloudera-repos/org/mortbay/jetty/jetty-util/6.1.26.cloudera.4/jetty-util-6.1.26.cloudera.4.pom"/>
+				<evicted-by rev="6.1.26"/>
+				<caller organisation="org.apache.hbase" name="hbase-common" conf="default, compile, runtime, master" rev="6.1.26.cloudera.4" rev-constraint-default="6.1.26.cloudera.4" rev-constraint-dynamic="6.1.26.cloudera.4" callerrev="1.2.0-cdh5.8.2"/>
+				<caller organisation="org.mortbay.jetty" name="jetty" conf="compile, runtime" rev="6.1.14" rev-constraint-default="6.1.14" rev-constraint-dynamic="6.1.14" callerrev="6.1.14"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-core" conf="default, compile, runtime, master" rev="6.1.14" rev-constraint-default="6.1.14" rev-constraint-dynamic="6.1.14" callerrev="0.20.2"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="6.1.14" status="release" pubdate="20081114084919" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<metadata-artifact status="no" details="" size="5940" time="0" location="/Users/peiyuchao/.ivy2/cache/org.mortbay.jetty/jetty-util/ivy-6.1.14.xml" searched="false" origin-is-local="false" origin-location="http://repo2.maven.org/maven2/org/mortbay/jetty/jetty-util/6.1.14/jetty-util-6.1.14.pom"/>
+				<evicted-by rev="6.1.26.cloudera.4"/>
+				<caller organisation="org.mortbay.jetty" name="jetty" conf="compile, runtime" rev="6.1.14" rev-constraint-default="6.1.14" rev-constraint-dynamic="6.1.14" callerrev="6.1.14"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-core" conf="default, compile, runtime, master" rev="6.1.14" rev-constraint-default="6.1.14" rev-constraint-dynamic="6.1.14" callerrev="0.20.2"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="javax.servlet" name="servlet-api">
+			<revision name="2.5" status="release" pubdate="20060717190957" resolver="cloudera-release" artresolver="cloudera-release" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="40">
+				<metadata-artifact status="successful" details="" size="157" time="1795" location="/Users/peiyuchao/.ivy2/cache/javax.servlet/servlet-api/ivy-2.5.xml" searched="true" original-local-location="/Users/peiyuchao/.ivy2/cache/javax.servlet/servlet-api/ivy-2.5.xml.original" origin-is-local="false" origin-location="https://repository.cloudera.com/artifactory/cloudera-repos/javax/servlet/servlet-api/2.5/servlet-api-2.5.pom"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-common" conf="default, compile, runtime, master" rev="2.5" rev-constraint-default="2.5" rev-constraint-dynamic="2.5" callerrev="2.7.3"/>
+				<artifacts>
+					<artifact name="servlet-api" type="jar" ext="jar" status="successful" details="" size="105112" time="3148" location="/Users/peiyuchao/.ivy2/cache/javax.servlet/servlet-api/jars/servlet-api-2.5.jar">
+						<origin-location is-local="false" location="https://repository.cloudera.com/artifactory/cloudera-repos/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-net" name="commons-net">
+			<revision name="3.1" status="release" pubdate="20120215024228" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/net/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="39">
+				<metadata-artifact status="no" details="" size="7821" time="0" location="/Users/peiyuchao/.ivy2/cache/commons-net/commons-net/ivy-3.1.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/commons-net/commons-net/3.1/commons-net-3.1.pom"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-core" conf="default, compile, runtime, master" rev="1.4.1" rev-constraint-default="1.4.1" rev-constraint-dynamic="1.4.1" callerrev="0.20.2"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-common" conf="default, compile, runtime, master" rev="3.1" rev-constraint-default="3.1" rev-constraint-dynamic="3.1" callerrev="2.7.3"/>
+				<artifacts>
+					<artifact name="commons-net" type="jar" ext="jar" status="no" details="" size="273370" time="0" location="/Users/peiyuchao/.ivy2/cache/commons-net/commons-net/jars/commons-net-3.1.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/commons-net/commons-net/3.1/commons-net-3.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="1.4.1" status="release" pubdate="20130314013214" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="http://jakarta.apache.org/commons/${pom.artifactId.substring(8)}/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<license name="The Apache Software License, Version 2.0" url="/LICENSE.txt"/>
+				<metadata-artifact status="no" details="" size="2591" time="0" location="/Users/peiyuchao/.ivy2/cache/commons-net/commons-net/ivy-1.4.1.xml" searched="false" origin-is-local="false" origin-location="https://repository.apache.org/content/repositories/releases/commons-net/commons-net/1.4.1/commons-net-1.4.1.pom"/>
+				<evicted-by rev="3.1"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-core" conf="default, compile, runtime, master" rev="1.4.1" rev-constraint-default="1.4.1" rev-constraint-dynamic="1.4.1" callerrev="0.20.2"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.commons" name="commons-math3">
+			<revision name="3.1.1" status="release" pubdate="20130110001459" resolver="cloudera-release" artresolver="cloudera-release" homepage="http://commons.apache.org/math/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="38">
+				<metadata-artifact status="successful" details="" size="14015" time="2404" location="/Users/peiyuchao/.ivy2/cache/org.apache.commons/commons-math3/ivy-3.1.1.xml" searched="true" original-local-location="/Users/peiyuchao/.ivy2/cache/org.apache.commons/commons-math3/ivy-3.1.1.xml.original" origin-is-local="false" origin-location="https://repository.cloudera.com/artifactory/cloudera-repos/org/apache/commons/commons-math3/3.1.1/commons-math3-3.1.1.pom"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-common" conf="default, compile, runtime, master" rev="3.1.1" rev-constraint-default="3.1.1" rev-constraint-dynamic="3.1.1" callerrev="2.7.3"/>
+				<artifacts>
+					<artifact name="commons-math3" type="jar" ext="jar" status="successful" details="" size="1599627" time="7583" location="/Users/peiyuchao/.ivy2/cache/org.apache.commons/commons-math3/jars/commons-math3-3.1.1.jar">
+						<origin-location is-local="false" location="https://repository.cloudera.com/artifactory/cloudera-repos/org/apache/commons/commons-math3/3.1.1/commons-math3-3.1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.hadoop" name="hadoop-annotations">
+			<revision name="2.7.3" status="release" pubdate="20160818085925" resolver="cloudera-release" artresolver="cloudera-release" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="37">
+				<metadata-artifact status="successful" details="" size="2350" time="1075" location="/Users/peiyuchao/.ivy2/cache/org.apache.hadoop/hadoop-annotations/ivy-2.7.3.xml" searched="true" original-local-location="/Users/peiyuchao/.ivy2/cache/org.apache.hadoop/hadoop-annotations/ivy-2.7.3.xml.original" origin-is-local="false" origin-location="https://repository.cloudera.com/artifactory/cloudera-repos/org/apache/hadoop/hadoop-annotations/2.7.3/hadoop-annotations-2.7.3.pom"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-common" conf="default, compile, runtime, master" rev="2.7.3" rev-constraint-default="2.7.3" rev-constraint-dynamic="2.7.3" callerrev="2.7.3"/>
+				<artifacts>
+					<artifact name="hadoop-annotations" type="jar" ext="jar" status="successful" details="" size="40863" time="1390" location="/Users/peiyuchao/.ivy2/cache/org.apache.hadoop/hadoop-annotations/jars/hadoop-annotations-2.7.3.jar">
+						<origin-location is-local="false" location="https://repository.cloudera.com/artifactory/cloudera-repos/org/apache/hadoop/hadoop-annotations/2.7.3/hadoop-annotations-2.7.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.hbase" name="hbase-client">
+			<revision name="1.2.0-cdh5.8.2" status="release" pubdate="20160912031615" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="16">
+				<metadata-artifact status="no" details="" size="70827" time="0" location="/Users/peiyuchao/.ivy2/cache/org.apache.hbase/hbase-client/ivy-1.2.0-cdh5.8.2.xml" searched="false" origin-is-local="false" origin-location="https://repository.cloudera.com/artifactory/cloudera-repos/org/apache/hbase/hbase-client/1.2.0-cdh5.8.2/hbase-client-1.2.0-cdh5.8.2.pom"/>
+				<caller organisation="default" name="hbase_test_2.11" conf="compile, runtime" rev="1.2.0-cdh5.8.2" rev-constraint-default="1.2.0-cdh5.8.2" rev-constraint-dynamic="1.2.0-cdh5.8.2" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="hbase-client" type="jar" ext="jar" status="no" details="" size="1294997" time="0" location="/Users/peiyuchao/.ivy2/cache/org.apache.hbase/hbase-client/jars/hbase-client-1.2.0-cdh5.8.2.jar">
+						<origin-location is-local="false" location="https://repository.cloudera.com/artifactory/cloudera-repos/org/apache/hbase/hbase-client/1.2.0-cdh5.8.2/hbase-client-1.2.0-cdh5.8.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.yammer.metrics" name="metrics-core">
+			<revision name="2.2.0" status="release" pubdate="20121127041108" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="33">
+				<metadata-artifact status="no" details="" size="4088" time="0" location="/Users/peiyuchao/.ivy2/cache/com.yammer.metrics/metrics-core/ivy-2.2.0.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/com/yammer/metrics/metrics-core/2.2.0/metrics-core-2.2.0.pom"/>
+				<caller organisation="org.apache.hbase" name="hbase-client" conf="default, compile, runtime, master" rev="2.2.0" rev-constraint-default="2.2.0" rev-constraint-dynamic="2.2.0" callerrev="1.2.0-cdh5.8.2"/>
+				<artifacts>
+					<artifact name="metrics-core" type="jar" ext="jar" status="no" details="" size="82123" time="0" location="/Users/peiyuchao/.ivy2/cache/com.yammer.metrics/metrics-core/jars/metrics-core-2.2.0.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/com/yammer/metrics/metrics-core/2.2.0/metrics-core-2.2.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.jruby.joni" name="joni">
+			<revision name="2.1.2" status="release" pubdate="20140829004203" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="32">
+				<license name="MIT License" url="http://www.opensource.org/licenses/mit-license.php"/>
+				<metadata-artifact status="no" details="" size="3463" time="0" location="/Users/peiyuchao/.ivy2/cache/org.jruby.joni/joni/ivy-2.1.2.xml" searched="false" origin-is-local="false" origin-location="http://repo2.maven.org/maven2/org/jruby/joni/joni/2.1.2/joni-2.1.2.pom"/>
+				<caller organisation="org.apache.hbase" name="hbase-client" conf="default, compile, runtime, master" rev="2.1.2" rev-constraint-default="2.1.2" rev-constraint-dynamic="2.1.2" callerrev="1.2.0-cdh5.8.2"/>
+				<artifacts>
+					<artifact name="joni" type="jar" ext="jar" status="no" details="" size="187292" time="0" location="/Users/peiyuchao/.ivy2/cache/org.jruby.joni/joni/jars/joni-2.1.2.jar">
+						<origin-location is-local="false" location="http://repo2.maven.org/maven2/org/jruby/joni/joni/2.1.2/joni-2.1.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.jruby.jcodings" name="jcodings">
+			<revision name="1.0.8" status="release" pubdate="20120516081324" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="31">
+				<license name="MIT License" url="http://www.opensource.org/licenses/mit-license.php"/>
+				<metadata-artifact status="no" details="" size="2745" time="0" location="/Users/peiyuchao/.ivy2/cache/org.jruby.jcodings/jcodings/ivy-1.0.8.xml" searched="false" origin-is-local="false" origin-location="http://repo2.maven.org/maven2/org/jruby/jcodings/jcodings/1.0.8/jcodings-1.0.8.pom"/>
+				<caller organisation="org.jruby.joni" name="joni" conf="compile, runtime" rev="1.0.8" rev-constraint-default="1.0.8" rev-constraint-dynamic="1.0.8" callerrev="2.1.2"/>
+				<caller organisation="org.apache.hbase" name="hbase-client" conf="default, compile, runtime, master" rev="1.0.8" rev-constraint-default="1.0.8" rev-constraint-dynamic="1.0.8" callerrev="1.2.0-cdh5.8.2"/>
+				<artifacts>
+					<artifact name="jcodings" type="jar" ext="jar" status="no" details="" size="1291164" time="0" location="/Users/peiyuchao/.ivy2/cache/org.jruby.jcodings/jcodings/jars/jcodings-1.0.8.jar">
+						<origin-location is-local="false" location="http://repo2.maven.org/maven2/org/jruby/jcodings/jcodings/1.0.8/jcodings-1.0.8.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.netty" name="netty-all">
+			<revision name="4.0.23.Final" status="release" pubdate="20140816020640" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="29">
+				<metadata-artifact status="no" details="" size="15883" time="0" location="/Users/peiyuchao/.ivy2/cache/io.netty/netty-all/ivy-4.0.23.Final.xml" searched="false" origin-is-local="false" origin-location="http://repo2.maven.org/maven2/io/netty/netty-all/4.0.23.Final/netty-all-4.0.23.Final.pom"/>
+				<caller organisation="org.apache.hbase" name="hbase-client" conf="default, compile, runtime, master" rev="4.0.23.Final" rev-constraint-default="4.0.23.Final" rev-constraint-dynamic="4.0.23.Final" callerrev="1.2.0-cdh5.8.2"/>
+				<artifacts>
+					<artifact name="netty-all" type="jar" ext="jar" status="no" details="" size="1779991" time="0" location="/Users/peiyuchao/.ivy2/cache/io.netty/netty-all/jars/netty-all-4.0.23.Final.jar">
+						<origin-location is-local="false" location="http://repo2.maven.org/maven2/io/netty/netty-all/4.0.23.Final/netty-all-4.0.23.Final.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.hbase" name="hbase-common">
+			<revision name="1.2.0-cdh5.8.2" status="release" pubdate="20160912031556" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="34">
+				<metadata-artifact status="no" details="" size="68793" time="0" location="/Users/peiyuchao/.ivy2/cache/org.apache.hbase/hbase-common/ivy-1.2.0-cdh5.8.2.xml" searched="false" origin-is-local="false" origin-location="https://repository.cloudera.com/artifactory/cloudera-repos/org/apache/hbase/hbase-common/1.2.0-cdh5.8.2/hbase-common-1.2.0-cdh5.8.2.pom"/>
+				<caller organisation="default" name="hbase_test_2.11" conf="compile, runtime" rev="1.2.0-cdh5.8.2" rev-constraint-default="1.2.0-cdh5.8.2" rev-constraint-dynamic="1.2.0-cdh5.8.2" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="hbase-common" type="jar" ext="jar" status="no" details="" size="581725" time="0" location="/Users/peiyuchao/.ivy2/cache/org.apache.hbase/hbase-common/jars/hbase-common-1.2.0-cdh5.8.2.jar">
+						<origin-location is-local="false" location="https://repository.cloudera.com/artifactory/cloudera-repos/org/apache/hbase/hbase-common/1.2.0-cdh5.8.2/hbase-common-1.2.0-cdh5.8.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.htrace" name="htrace-core">
+			<revision name="3.2.0-incubating" status="release" pubdate="20150501075551" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://incubator.apache.org/projects/htrace.html" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="30">
+				<metadata-artifact status="no" details="" size="5230" time="0" location="/Users/peiyuchao/.ivy2/cache/org.apache.htrace/htrace-core/ivy-3.2.0-incubating.xml" searched="false" origin-is-local="false" origin-location="https://repository.cloudera.com/artifactory/cloudera-repos/org/apache/htrace/htrace-core/3.2.0-incubating/htrace-core-3.2.0-incubating.pom"/>
+				<caller organisation="org.apache.hbase" name="hbase-client" conf="default, compile, runtime, master" rev="3.2.0-incubating" rev-constraint-default="3.2.0-incubating" rev-constraint-dynamic="3.2.0-incubating" callerrev="1.2.0-cdh5.8.2"/>
+				<caller organisation="org.apache.hbase" name="hbase-common" conf="default, compile, runtime, master" rev="3.2.0-incubating" rev-constraint-default="3.2.0-incubating" rev-constraint-dynamic="3.2.0-incubating" callerrev="1.2.0-cdh5.8.2"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-common" conf="default, compile, runtime, master" rev="3.1.0-incubating" rev-constraint-default="3.1.0-incubating" rev-constraint-dynamic="3.1.0-incubating" callerrev="2.7.3"/>
+				<artifacts>
+					<artifact name="htrace-core" type="jar" ext="jar" status="no" details="" size="1483913" time="0" location="/Users/peiyuchao/.ivy2/cache/org.apache.htrace/htrace-core/jars/htrace-core-3.2.0-incubating.jar">
+						<origin-location is-local="false" location="https://repository.cloudera.com/artifactory/cloudera-repos/org/apache/htrace/htrace-core/3.2.0-incubating/htrace-core-3.2.0-incubating.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="3.1.0-incubating" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="3.2.0-incubating"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-common" conf="default, compile, runtime, master" rev="3.1.0-incubating" rev-constraint-default="3.1.0-incubating" rev-constraint-dynamic="3.1.0-incubating" callerrev="2.7.3"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.mortbay.jetty" name="servlet-api">
+			<revision name="2.5-20081211" status="release" pubdate="20081212013400" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="43">
+				<metadata-artifact status="no" details="" size="2759" time="0" location="/Users/peiyuchao/.ivy2/cache/org.mortbay.jetty/servlet-api/ivy-2.5-20081211.xml" searched="false" origin-is-local="false" origin-location="http://repo2.maven.org/maven2/org/mortbay/jetty/servlet-api/2.5-20081211/servlet-api-2.5-20081211.pom"/>
+				<caller organisation="org.mortbay.jetty" name="jetty" conf="compile, runtime" rev="2.5-20081211" rev-constraint-default="2.5-20081211" rev-constraint-dynamic="2.5-20081211" callerrev="6.1.26"/>
+				<artifacts>
+					<artifact name="servlet-api" type="jar" ext="jar" status="no" details="" size="134133" time="0" location="/Users/peiyuchao/.ivy2/cache/org.mortbay.jetty/servlet-api/jars/servlet-api-2.5-20081211.jar">
+						<origin-location is-local="false" location="http://repo2.maven.org/maven2/org/mortbay/jetty/servlet-api/2.5-20081211/servlet-api-2.5-20081211.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-io" name="commons-io">
+			<revision name="2.4" status="release" pubdate="20120613062206" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/io/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="26">
+				<metadata-artifact status="no" details="" size="8463" time="0" location="/Users/peiyuchao/.ivy2/cache/commons-io/commons-io/ivy-2.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-io/commons-io/2.4/commons-io-2.4.pom"/>
+				<caller organisation="org.apache.hbase" name="hbase-client" conf="default, compile, runtime, master" rev="2.4" rev-constraint-default="2.4" rev-constraint-dynamic="2.4" callerrev="1.2.0-cdh5.8.2"/>
+				<caller organisation="org.apache.hbase" name="hbase-common" conf="default, compile, runtime, master" rev="2.4" rev-constraint-default="2.4" rev-constraint-dynamic="2.4" callerrev="1.2.0-cdh5.8.2"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-common" conf="default, compile, runtime, master" rev="2.4" rev-constraint-default="2.4" rev-constraint-dynamic="2.4" callerrev="2.7.3"/>
+				<artifacts>
+					<artifact name="commons-io" type="jar" ext="jar" status="no" details="" size="185140" time="0" location="/Users/peiyuchao/.ivy2/cache/commons-io/commons-io/jars/commons-io-2.4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-io/commons-io/2.4/commons-io-2.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-collections" name="commons-collections">
+			<revision name="3.2.2" status="release" pubdate="20151113071126" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/collections/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="35">
+				<metadata-artifact status="no" details="" size="10885" time="0" location="/Users/peiyuchao/.ivy2/cache/commons-collections/commons-collections/ivy-3.2.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.pom"/>
+				<caller organisation="commons-configuration" name="commons-configuration" conf="compile, runtime" rev="3.2.1" rev-constraint-default="3.2.1" rev-constraint-dynamic="3.2.1" callerrev="1.6"/>
+				<caller organisation="org.apache.hbase" name="hbase-common" conf="default, compile, runtime, master" rev="3.2.2" rev-constraint-default="3.2.2" rev-constraint-dynamic="3.2.2" callerrev="1.2.0-cdh5.8.2"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-common" conf="default, compile, runtime, master" rev="3.2.2" rev-constraint-default="3.2.2" rev-constraint-dynamic="3.2.2" callerrev="2.7.3"/>
+				<artifacts>
+					<artifact name="commons-collections" type="jar" ext="jar" status="no" details="" size="588337" time="0" location="/Users/peiyuchao/.ivy2/cache/commons-collections/commons-collections/jars/commons-collections-3.2.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="3.2.1" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="3.2.2"/>
+				<caller organisation="commons-configuration" name="commons-configuration" conf="compile, runtime" rev="3.2.1" rev-constraint-default="3.2.1" rev-constraint-dynamic="3.2.1" callerrev="1.6"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-lang" name="commons-lang">
+			<revision name="2.6" status="release" pubdate="20130309061113" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/lang/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="27">
+				<metadata-artifact status="no" details="" size="6396" time="0" location="/Users/peiyuchao/.ivy2/cache/commons-lang/commons-lang/ivy-2.6.xml" searched="false" origin-is-local="false" origin-location="https://repository.apache.org/content/repositories/releases/commons-lang/commons-lang/2.6/commons-lang-2.6.pom"/>
+				<caller organisation="commons-configuration" name="commons-configuration" conf="compile, runtime" rev="2.4" rev-constraint-default="2.4" rev-constraint-dynamic="2.4" callerrev="1.6"/>
+				<caller organisation="org.apache.hbase" name="hbase-client" conf="default, compile, runtime, master" rev="2.6" rev-constraint-default="2.6" rev-constraint-dynamic="2.6" callerrev="1.2.0-cdh5.8.2"/>
+				<caller organisation="org.apache.hbase" name="hbase-common" conf="default, compile, runtime, master" rev="2.6" rev-constraint-default="2.6" rev-constraint-dynamic="2.6" callerrev="1.2.0-cdh5.8.2"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-common" conf="default, compile, runtime, master" rev="2.6" rev-constraint-default="2.6" rev-constraint-dynamic="2.6" callerrev="2.7.3"/>
+				<artifacts>
+					<artifact name="commons-lang" type="jar" ext="jar" status="no" details="" size="284220" time="0" location="/Users/peiyuchao/.ivy2/cache/commons-lang/commons-lang/jars/commons-lang-2.6.jar">
+						<origin-location is-local="false" location="https://repository.apache.org/content/repositories/releases/commons-lang/commons-lang/2.6/commons-lang-2.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="2.4" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="2.6"/>
+				<caller organisation="commons-configuration" name="commons-configuration" conf="compile, runtime" rev="2.4" rev-constraint-default="2.4" rev-constraint-dynamic="2.4" callerrev="1.6"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-codec" name="commons-codec">
+			<revision name="1.9" status="release" pubdate="20131221115739" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/proper/commons-codec/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="25">
+				<metadata-artifact status="no" details="" size="9856" time="0" location="/Users/peiyuchao/.ivy2/cache/commons-codec/commons-codec/ivy-1.9.xml" searched="false" origin-is-local="false" origin-location="https://repository.apache.org/content/repositories/releases/commons-codec/commons-codec/1.9/commons-codec-1.9.pom"/>
+				<caller organisation="net.java.dev.jets3t" name="jets3t" conf="compile, runtime" rev="1.3" rev-constraint-default="1.3" rev-constraint-dynamic="1.3" callerrev="0.7.1"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-auth" conf="compile, runtime" rev="1.4" rev-constraint-default="1.4" rev-constraint-dynamic="1.4" callerrev="2.7.3"/>
+				<caller organisation="org.apache.httpcomponents" name="httpclient" conf="compile" rev="1.4" rev-constraint-default="1.4" rev-constraint-dynamic="1.6" callerrev="4.2.5"/>
+				<caller organisation="net.java.dev.jets3t" name="jets3t" conf="compile, runtime" rev="1.4" rev-constraint-default="1.4" rev-constraint-dynamic="1.4" callerrev="0.9.0"/>
+				<caller organisation="org.apache.hbase" name="hbase-client" conf="default, compile, runtime, master" rev="1.9" rev-constraint-default="1.9" rev-constraint-dynamic="1.9" callerrev="1.2.0-cdh5.8.2"/>
+				<caller organisation="org.apache.hbase" name="hbase-common" conf="default, compile, runtime, master" rev="1.9" rev-constraint-default="1.9" rev-constraint-dynamic="1.9" callerrev="1.2.0-cdh5.8.2"/>
+				<caller organisation="commons-httpclient" name="commons-httpclient" conf="compile, runtime" rev="1.2" rev-constraint-default="1.2" rev-constraint-dynamic="1.2" callerrev="3.0.1"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-core" conf="default, compile, runtime, master" rev="1.3" rev-constraint-default="1.3" rev-constraint-dynamic="1.3" callerrev="0.20.2"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-common" conf="default, compile, runtime, master" rev="1.4" rev-constraint-default="1.4" rev-constraint-dynamic="1.4" callerrev="2.7.3"/>
+				<artifacts>
+					<artifact name="commons-codec" type="jar" ext="jar" status="no" details="" size="263965" time="0" location="/Users/peiyuchao/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.9.jar">
+						<origin-location is-local="false" location="https://repository.apache.org/content/repositories/releases/commons-codec/commons-codec/1.9/commons-codec-1.9.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="1.3" status="release" pubdate="20051109062951" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="http://jakarta.apache.org/commons/codec/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<license name="The Apache Software License, Version 2.0" url="/LICENSE.txt"/>
+				<metadata-artifact status="no" details="" size="2791" time="0" location="/Users/peiyuchao/.ivy2/cache/commons-codec/commons-codec/ivy-1.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-codec/commons-codec/1.3/commons-codec-1.3.pom"/>
+				<evicted-by rev="1.9"/>
+				<caller organisation="net.java.dev.jets3t" name="jets3t" conf="compile, runtime" rev="1.3" rev-constraint-default="1.3" rev-constraint-dynamic="1.3" callerrev="0.7.1"/>
+				<caller organisation="commons-httpclient" name="commons-httpclient" conf="compile, runtime" rev="1.2" rev-constraint-default="1.2" rev-constraint-dynamic="1.2" callerrev="3.0.1"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-core" conf="default, compile, runtime, master" rev="1.3" rev-constraint-default="1.3" rev-constraint-dynamic="1.3" callerrev="0.20.2"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="1.6" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="runtime(*), master(compile), compile(*), compile, runtime, master" position="-1">
+				<evicted-by rev="1.4"/>
+				<caller organisation="org.apache.httpcomponents" name="httpclient" conf="compile, runtime" rev="1.6" rev-constraint-default="1.6" rev-constraint-dynamic="1.6" callerrev="4.2.5"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-auth" conf="compile, runtime" rev="1.4" rev-constraint-default="1.4" rev-constraint-dynamic="1.4" callerrev="2.7.3"/>
+				<caller organisation="net.java.dev.jets3t" name="jets3t" conf="compile, runtime" rev="1.4" rev-constraint-default="1.4" rev-constraint-dynamic="1.4" callerrev="0.9.0"/>
+				<caller organisation="org.apache.hbase" name="hbase-client" conf="default, compile, runtime, master" rev="1.4" rev-constraint-default="1.4" rev-constraint-dynamic="1.9" callerrev="1.2.0-cdh5.8.2"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-common" conf="default, compile, runtime, master" rev="1.4" rev-constraint-default="1.4" rev-constraint-dynamic="1.4" callerrev="2.7.3"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="1.4" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="1.9"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-auth" conf="compile, runtime" rev="1.4" rev-constraint-default="1.4" rev-constraint-dynamic="1.4" callerrev="2.7.3"/>
+				<caller organisation="org.apache.httpcomponents" name="httpclient" conf="compile" rev="1.4" rev-constraint-default="1.4" rev-constraint-dynamic="1.6" callerrev="4.2.5"/>
+				<caller organisation="net.java.dev.jets3t" name="jets3t" conf="compile, runtime" rev="1.4" rev-constraint-default="1.4" rev-constraint-dynamic="1.4" callerrev="0.9.0"/>
+				<caller organisation="org.apache.hbase" name="hbase-client" conf="default, compile, runtime, master" rev="1.4" rev-constraint-default="1.4" rev-constraint-dynamic="1.9" callerrev="1.2.0-cdh5.8.2"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-common" conf="default, compile, runtime, master" rev="1.4" rev-constraint-default="1.4" rev-constraint-dynamic="1.4" callerrev="2.7.3"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="1.2" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="1.3"/>
+				<caller organisation="commons-httpclient" name="commons-httpclient" conf="compile, runtime" rev="1.2" rev-constraint-default="1.2" rev-constraint-dynamic="1.2" callerrev="3.0.1"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-core" conf="default, compile, runtime, master" rev="1.3" rev-constraint-default="1.3" rev-constraint-dynamic="1.3" callerrev="0.20.2"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.google.guava" name="guava">
+			<revision name="12.0.1" status="release" pubdate="20120710195701" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="28">
+				<metadata-artifact status="no" details="" size="3451" time="0" location="/Users/peiyuchao/.ivy2/cache/com.google.guava/guava/ivy-12.0.1.xml" searched="false" origin-is-local="false" origin-location="http://repo2.maven.org/maven2/com/google/guava/guava/12.0.1/guava-12.0.1.pom"/>
+				<caller organisation="org.apache.curator" name="curator-recipes" conf="compile, runtime" rev="16.0.1" rev-constraint-default="16.0.1" rev-constraint-dynamic="16.0.1" callerrev="2.7.1"/>
+				<caller organisation="org.apache.hbase" name="hbase-client" conf="default, compile, runtime, master" rev="12.0.1" rev-constraint-default="12.0.1" rev-constraint-dynamic="12.0.1" callerrev="1.2.0-cdh5.8.2"/>
+				<caller organisation="org.apache.hbase" name="hbase-common" conf="default, compile, runtime, master" rev="12.0.1" rev-constraint-default="12.0.1" rev-constraint-dynamic="12.0.1" callerrev="1.2.0-cdh5.8.2"/>
+				<caller organisation="org.apache.curator" name="curator-client" conf="compile, runtime" rev="11.0.2" rev-constraint-default="11.0.2" rev-constraint-dynamic="16.0.1" callerrev="2.7.1"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-common" conf="default, compile, runtime, master" rev="11.0.2" rev-constraint-default="11.0.2" rev-constraint-dynamic="11.0.2" callerrev="2.7.3"/>
+				<caller organisation="org.apache.curator" name="curator-framework" conf="compile, runtime" rev="11.0.2" rev-constraint-default="11.0.2" rev-constraint-dynamic="16.0.1" callerrev="2.7.1"/>
+				<artifacts>
+					<artifact name="guava" type="jar" ext="jar" status="no" details="" size="1795932" time="0" location="/Users/peiyuchao/.ivy2/cache/com.google.guava/guava/jars/guava-12.0.1.jar">
+						<origin-location is-local="false" location="http://repo2.maven.org/maven2/com/google/guava/guava/12.0.1/guava-12.0.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="16.0.1" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*)" position="-1">
+				<evicted-by rev="12.0.1"/>
+				<caller organisation="org.apache.curator" name="curator-recipes" conf="compile, runtime" rev="16.0.1" rev-constraint-default="16.0.1" rev-constraint-dynamic="16.0.1" callerrev="2.7.1"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="11.0.2" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="12.0.1"/>
+				<caller organisation="org.apache.curator" name="curator-recipes" conf="compile, runtime" rev="16.0.1" rev-constraint-default="16.0.1" rev-constraint-dynamic="16.0.1" callerrev="2.7.1"/>
+				<caller organisation="org.apache.hbase" name="hbase-client" conf="default, compile, runtime, master" rev="11.0.2" rev-constraint-default="11.0.2" rev-constraint-dynamic="12.0.1" callerrev="1.2.0-cdh5.8.2"/>
+				<caller organisation="org.apache.curator" name="curator-client" conf="compile, runtime" rev="11.0.2" rev-constraint-default="11.0.2" rev-constraint-dynamic="16.0.1" callerrev="2.7.1"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-common" conf="default, compile, runtime, master" rev="11.0.2" rev-constraint-default="11.0.2" rev-constraint-dynamic="11.0.2" callerrev="2.7.3"/>
+				<caller organisation="org.apache.curator" name="curator-framework" conf="compile, runtime" rev="11.0.2" rev-constraint-default="11.0.2" rev-constraint-dynamic="16.0.1" callerrev="2.7.1"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.hbase" name="hbase-protocol">
+			<revision name="1.2.0-cdh5.8.2" status="release" pubdate="20160912031543" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="22">
+				<metadata-artifact status="no" details="" size="95412" time="0" location="/Users/peiyuchao/.ivy2/cache/org.apache.hbase/hbase-protocol/ivy-1.2.0-cdh5.8.2.xml" searched="false" origin-is-local="false" origin-location="https://repository.cloudera.com/artifactory/cloudera-repos/org/apache/hbase/hbase-protocol/1.2.0-cdh5.8.2/hbase-protocol-1.2.0-cdh5.8.2.pom"/>
+				<caller organisation="org.apache.hbase" name="hbase-client" conf="default, compile, runtime, master" rev="1.2.0-cdh5.8.2" rev-constraint-default="1.2.0-cdh5.8.2" rev-constraint-dynamic="1.2.0-cdh5.8.2" callerrev="1.2.0-cdh5.8.2"/>
+				<caller organisation="org.apache.hbase" name="hbase-common" conf="default, compile, runtime, master" rev="1.2.0-cdh5.8.2" rev-constraint-default="1.2.0-cdh5.8.2" rev-constraint-dynamic="1.2.0-cdh5.8.2" callerrev="1.2.0-cdh5.8.2"/>
+				<artifacts>
+					<artifact name="hbase-protocol" type="jar" ext="jar" status="no" details="" size="4378458" time="0" location="/Users/peiyuchao/.ivy2/cache/org.apache.hbase/hbase-protocol/jars/hbase-protocol-1.2.0-cdh5.8.2.jar">
+						<origin-location is-local="false" location="https://repository.cloudera.com/artifactory/cloudera-repos/org/apache/hbase/hbase-protocol/1.2.0-cdh5.8.2/hbase-protocol-1.2.0-cdh5.8.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-logging" name="commons-logging">
+			<revision name="1.2" status="release" pubdate="20140706021200" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/proper/commons-logging/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="24">
+				<metadata-artifact status="no" details="" size="11382" time="0" location="/Users/peiyuchao/.ivy2/cache/commons-logging/commons-logging/ivy-1.2.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/commons-logging/commons-logging/1.2/commons-logging-1.2.pom"/>
+				<caller organisation="commons-digester" name="commons-digester" conf="compile, runtime" rev="1.1" rev-constraint-default="1.1" rev-constraint-dynamic="1.1" callerrev="1.8"/>
+				<caller organisation="org.apache.hbase" name="hbase-protocol" conf="compile, runtime" rev="1.2" rev-constraint-default="1.2" rev-constraint-dynamic="1.2" callerrev="1.2.0-cdh5.8.2"/>
+				<caller organisation="commons-el" name="commons-el" conf="compile, runtime" rev="1.0.3" rev-constraint-default="1.0.3" rev-constraint-dynamic="1.0.3" callerrev="1.0"/>
+				<caller organisation="commons-beanutils" name="commons-beanutils" conf="compile, runtime" rev="1.0.3" rev-constraint-default="1.0.3" rev-constraint-dynamic="1.0.3" callerrev="1.7.0"/>
+				<caller organisation="commons-httpclient" name="commons-httpclient" conf="compile, runtime" rev="1.0.3" rev-constraint-default="1.0.3" rev-constraint-dynamic="1.0.3" callerrev="3.0.1"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-common" conf="default, compile, runtime, master" rev="1.1.3" rev-constraint-default="1.1.3" rev-constraint-dynamic="1.1.3" callerrev="2.7.3"/>
+				<caller organisation="commons-beanutils" name="commons-beanutils-core" conf="compile, runtime" rev="1.1.1" rev-constraint-default="1.1.1" rev-constraint-dynamic="1.1.1" callerrev="1.8.0"/>
+				<caller organisation="net.java.dev.jets3t" name="jets3t" conf="compile, runtime" rev="1.1.1" rev-constraint-default="1.1.1" rev-constraint-dynamic="1.1.1" callerrev="0.7.1"/>
+				<caller organisation="org.apache.httpcomponents" name="httpclient" conf="compile" rev="1.1.3" rev-constraint-default="1.1.3" rev-constraint-dynamic="1.1.1" callerrev="4.2.5"/>
+				<caller organisation="commons-configuration" name="commons-configuration" conf="compile, runtime" rev="1.1.1" rev-constraint-default="1.1.1" rev-constraint-dynamic="1.1.1" callerrev="1.6"/>
+				<caller organisation="net.java.dev.jets3t" name="jets3t" conf="compile, runtime" rev="1.1.1" rev-constraint-default="1.1.1" rev-constraint-dynamic="1.1.1" callerrev="0.9.0"/>
+				<caller organisation="org.apache.hbase" name="hbase-client" conf="default, compile, runtime, master" rev="1.2" rev-constraint-default="1.2" rev-constraint-dynamic="1.2" callerrev="1.2.0-cdh5.8.2"/>
+				<caller organisation="org.apache.hbase" name="hbase-common" conf="default, compile, runtime, master" rev="1.2" rev-constraint-default="1.2" rev-constraint-dynamic="1.2" callerrev="1.2.0-cdh5.8.2"/>
+				<artifacts>
+					<artifact name="commons-logging" type="jar" ext="jar" status="no" details="" size="61829" time="0" location="/Users/peiyuchao/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.2.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/commons-logging/commons-logging/1.2/commons-logging-1.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="1.1.1" status="release" pubdate="20071127042410" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="http://commons.apache.org/logging" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<metadata-artifact status="no" details="" size="3941" time="0" location="/Users/peiyuchao/.ivy2/cache/commons-logging/commons-logging/ivy-1.1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.pom"/>
+				<evicted-by rev="1.2"/>
+				<caller organisation="commons-digester" name="commons-digester" conf="compile, runtime" rev="1.1" rev-constraint-default="1.1" rev-constraint-dynamic="1.1" callerrev="1.8"/>
+				<caller organisation="commons-beanutils" name="commons-beanutils-core" conf="compile, runtime" rev="1.1.1" rev-constraint-default="1.1.1" rev-constraint-dynamic="1.1.1" callerrev="1.8.0"/>
+				<caller organisation="net.java.dev.jets3t" name="jets3t" conf="compile, runtime" rev="1.1.1" rev-constraint-default="1.1.1" rev-constraint-dynamic="1.1.1" callerrev="0.7.1"/>
+				<caller organisation="org.apache.httpcomponents" name="httpclient" conf="compile, runtime" rev="1.1.1" rev-constraint-default="1.1.1" rev-constraint-dynamic="1.1.1" callerrev="4.2.5"/>
+				<caller organisation="commons-el" name="commons-el" conf="compile, runtime" rev="1.0.3" rev-constraint-default="1.0.3" rev-constraint-dynamic="1.0.3" callerrev="1.0"/>
+				<caller organisation="commons-configuration" name="commons-configuration" conf="compile, runtime" rev="1.1.1" rev-constraint-default="1.1.1" rev-constraint-dynamic="1.1.1" callerrev="1.6"/>
+				<caller organisation="commons-beanutils" name="commons-beanutils" conf="compile, runtime" rev="1.0.3" rev-constraint-default="1.0.3" rev-constraint-dynamic="1.0.3" callerrev="1.7.0"/>
+				<caller organisation="net.java.dev.jets3t" name="jets3t" conf="compile, runtime" rev="1.1.1" rev-constraint-default="1.1.1" rev-constraint-dynamic="1.1.1" callerrev="0.9.0"/>
+				<caller organisation="org.apache.hbase" name="hbase-client" conf="default, compile, runtime, master" rev="1.1.3" rev-constraint-default="1.1.3" rev-constraint-dynamic="1.2" callerrev="1.2.0-cdh5.8.2"/>
+				<caller organisation="commons-httpclient" name="commons-httpclient" conf="compile, runtime" rev="1.0.3" rev-constraint-default="1.0.3" rev-constraint-dynamic="1.0.3" callerrev="3.0.1"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-common" conf="default, compile, runtime, master" rev="1.1.3" rev-constraint-default="1.1.3" rev-constraint-dynamic="1.1.3" callerrev="2.7.3"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="1.0.3" status="release" pubdate="20130314013214" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="http://jakarta.apache.org/commons/logging/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<metadata-artifact status="no" details="" size="2640" time="0" location="/Users/peiyuchao/.ivy2/cache/commons-logging/commons-logging/ivy-1.0.3.xml" searched="false" origin-is-local="false" origin-location="https://repository.apache.org/content/repositories/releases/commons-logging/commons-logging/1.0.3/commons-logging-1.0.3.pom"/>
+				<evicted-by rev="1.2"/>
+				<caller organisation="commons-el" name="commons-el" conf="compile, runtime" rev="1.0.3" rev-constraint-default="1.0.3" rev-constraint-dynamic="1.0.3" callerrev="1.0"/>
+				<caller organisation="commons-beanutils" name="commons-beanutils" conf="compile, runtime" rev="1.0.3" rev-constraint-default="1.0.3" rev-constraint-dynamic="1.0.3" callerrev="1.7.0"/>
+				<caller organisation="commons-httpclient" name="commons-httpclient" conf="compile, runtime" rev="1.0.3" rev-constraint-default="1.0.3" rev-constraint-dynamic="1.0.3" callerrev="3.0.1"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="1.1" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="1.2"/>
+				<caller organisation="commons-digester" name="commons-digester" conf="compile, runtime" rev="1.1" rev-constraint-default="1.1" rev-constraint-dynamic="1.1" callerrev="1.8"/>
+				<caller organisation="commons-el" name="commons-el" conf="compile, runtime" rev="1.0.3" rev-constraint-default="1.0.3" rev-constraint-dynamic="1.0.3" callerrev="1.0"/>
+				<caller organisation="commons-beanutils" name="commons-beanutils" conf="compile, runtime" rev="1.0.3" rev-constraint-default="1.0.3" rev-constraint-dynamic="1.0.3" callerrev="1.7.0"/>
+				<caller organisation="commons-httpclient" name="commons-httpclient" conf="compile, runtime" rev="1.0.3" rev-constraint-default="1.0.3" rev-constraint-dynamic="1.0.3" callerrev="3.0.1"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="1.1.3" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="1.1.1"/>
+				<caller organisation="net.java.dev.jets3t" name="jets3t" conf="compile, runtime" rev="1.1.1" rev-constraint-default="1.1.1" rev-constraint-dynamic="1.1.1" callerrev="0.7.1"/>
+				<caller organisation="org.apache.httpcomponents" name="httpclient" conf="compile" rev="1.1.3" rev-constraint-default="1.1.3" rev-constraint-dynamic="1.1.1" callerrev="4.2.5"/>
+				<caller organisation="commons-el" name="commons-el" conf="compile, runtime" rev="1.0.3" rev-constraint-default="1.0.3" rev-constraint-dynamic="1.0.3" callerrev="1.0"/>
+				<caller organisation="net.java.dev.jets3t" name="jets3t" conf="compile, runtime" rev="1.1.1" rev-constraint-default="1.1.1" rev-constraint-dynamic="1.1.1" callerrev="0.9.0"/>
+				<caller organisation="org.apache.hbase" name="hbase-client" conf="default, compile, runtime, master" rev="1.1.3" rev-constraint-default="1.1.3" rev-constraint-dynamic="1.2" callerrev="1.2.0-cdh5.8.2"/>
+				<caller organisation="commons-httpclient" name="commons-httpclient" conf="compile, runtime" rev="1.0.3" rev-constraint-default="1.0.3" rev-constraint-dynamic="1.0.3" callerrev="3.0.1"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-common" conf="default, compile, runtime, master" rev="1.1.3" rev-constraint-default="1.1.3" rev-constraint-dynamic="1.1.3" callerrev="2.7.3"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.google.protobuf" name="protobuf-java">
+			<revision name="2.5.0" status="release" pubdate="20130308081811" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://code.google.com/p/protobuf" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="23">
+				<license name="New BSD license" url="http://www.opensource.org/licenses/bsd-license.php"/>
+				<metadata-artifact status="no" details="" size="3013" time="0" location="/Users/peiyuchao/.ivy2/cache/com.google.protobuf/protobuf-java/ivy-2.5.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/protobuf/protobuf-java/2.5.0/protobuf-java-2.5.0.pom"/>
+				<caller organisation="org.apache.hbase" name="hbase-protocol" conf="compile, runtime" rev="2.5.0" rev-constraint-default="2.5.0" rev-constraint-dynamic="2.5.0" callerrev="1.2.0-cdh5.8.2"/>
+				<caller organisation="org.apache.hbase" name="hbase-client" conf="default, compile, runtime, master" rev="2.5.0" rev-constraint-default="2.5.0" rev-constraint-dynamic="2.5.0" callerrev="1.2.0-cdh5.8.2"/>
+				<caller organisation="org.apache.hbase" name="hbase-common" conf="default, compile, runtime, master" rev="2.5.0" rev-constraint-default="2.5.0" rev-constraint-dynamic="2.5.0" callerrev="1.2.0-cdh5.8.2"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-common" conf="default, compile, runtime, master" rev="2.5.0" rev-constraint-default="2.5.0" rev-constraint-dynamic="2.5.0" callerrev="2.7.3"/>
+				<artifacts>
+					<artifact name="protobuf-java" type="bundle" ext="jar" status="no" details="" size="533455" time="0" location="/Users/peiyuchao/.ivy2/cache/com.google.protobuf/protobuf-java/bundles/protobuf-java-2.5.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/google/protobuf/protobuf-java/2.5.0/protobuf-java-2.5.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.hbase" name="hbase-annotations">
+			<revision name="1.2.0-cdh5.8.2" status="release" pubdate="20160912031510" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="17">
+				<metadata-artifact status="no" details="" size="94262" time="0" location="/Users/peiyuchao/.ivy2/cache/org.apache.hbase/hbase-annotations/ivy-1.2.0-cdh5.8.2.xml" searched="false" origin-is-local="false" origin-location="https://repository.cloudera.com/artifactory/cloudera-repos/org/apache/hbase/hbase-annotations/1.2.0-cdh5.8.2/hbase-annotations-1.2.0-cdh5.8.2.pom"/>
+				<caller organisation="org.apache.hbase" name="hbase-protocol" conf="compile, runtime" rev="1.2.0-cdh5.8.2" rev-constraint-default="1.2.0-cdh5.8.2" rev-constraint-dynamic="1.2.0-cdh5.8.2" callerrev="1.2.0-cdh5.8.2"/>
+				<caller organisation="org.apache.hbase" name="hbase-client" conf="default, compile, runtime, master" rev="1.2.0-cdh5.8.2" rev-constraint-default="1.2.0-cdh5.8.2" rev-constraint-dynamic="1.2.0-cdh5.8.2" callerrev="1.2.0-cdh5.8.2"/>
+				<caller organisation="org.apache.hbase" name="hbase-common" conf="default, compile, runtime, master" rev="1.2.0-cdh5.8.2" rev-constraint-default="1.2.0-cdh5.8.2" rev-constraint-dynamic="1.2.0-cdh5.8.2" callerrev="1.2.0-cdh5.8.2"/>
+				<artifacts>
+					<artifact name="hbase-annotations" type="jar" ext="jar" status="no" details="" size="20841" time="0" location="/Users/peiyuchao/.ivy2/cache/org.apache.hbase/hbase-annotations/jars/hbase-annotations-1.2.0-cdh5.8.2.jar">
+						<origin-location is-local="false" location="https://repository.cloudera.com/artifactory/cloudera-repos/org/apache/hbase/hbase-annotations/1.2.0-cdh5.8.2/hbase-annotations-1.2.0-cdh5.8.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="junit" name="junit">
+			<revision name="4.12" status="release" pubdate="20141205001743" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://junit.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="20">
+				<license name="Eclipse Public License 1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
+				<metadata-artifact status="no" details="" size="3191" time="0" location="/Users/peiyuchao/.ivy2/cache/junit/junit/ivy-4.12.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/junit/junit/4.12/junit-4.12.pom"/>
+				<caller organisation="org.apache.hbase" name="hbase-protocol" conf="compile, runtime" rev="4.12" rev-constraint-default="4.12" rev-constraint-dynamic="4.12" callerrev="1.2.0-cdh5.8.2"/>
+				<caller organisation="jline" name="jline" conf="compile, runtime" rev="4.11" rev-constraint-default="4.11" rev-constraint-dynamic="3.8.1" callerrev="0.9.94"/>
+				<caller organisation="org.apache.hbase" name="hbase-client" conf="default, compile, runtime, master" rev="4.12" rev-constraint-default="4.12" rev-constraint-dynamic="4.12" callerrev="1.2.0-cdh5.8.2"/>
+				<caller organisation="org.apache.hbase" name="hbase-common" conf="default, compile, runtime, master" rev="4.12" rev-constraint-default="4.12" rev-constraint-dynamic="4.12" callerrev="1.2.0-cdh5.8.2"/>
+				<caller organisation="commons-httpclient" name="commons-httpclient" conf="compile, runtime" rev="3.8.1" rev-constraint-default="3.8.1" rev-constraint-dynamic="3.8.1" callerrev="3.0.1"/>
+				<caller organisation="org.apache.hbase" name="hbase-annotations" conf="compile, runtime" rev="4.12" rev-constraint-default="4.12" rev-constraint-dynamic="4.12" callerrev="1.2.0-cdh5.8.2"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-core" conf="default, compile, runtime, master" rev="4.5" rev-constraint-default="4.5" rev-constraint-dynamic="4.5" callerrev="0.20.2"/>
+				<artifacts>
+					<artifact name="junit" type="jar" ext="jar" status="no" details="" size="314932" time="0" location="/Users/peiyuchao/.ivy2/cache/junit/junit/jars/junit-4.12.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/junit/junit/4.12/junit-4.12.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="4.5" status="release" pubdate="20080904212928" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="http://junit.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<license name="Common Public License Version 1.0" url="http://www.opensource.org/licenses/cpl1.0.txt"/>
+				<metadata-artifact status="no" details="" size="2455" time="0" location="/Users/peiyuchao/.ivy2/cache/junit/junit/ivy-4.5.xml" searched="false" origin-is-local="false" origin-location="http://repo2.maven.org/maven2/junit/junit/4.5/junit-4.5.pom"/>
+				<evicted-by rev="4.12"/>
+				<caller organisation="commons-httpclient" name="commons-httpclient" conf="compile, runtime" rev="3.8.1" rev-constraint-default="3.8.1" rev-constraint-dynamic="3.8.1" callerrev="3.0.1"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-core" conf="default, compile, runtime, master" rev="4.5" rev-constraint-default="4.5" rev-constraint-dynamic="4.5" callerrev="0.20.2"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="4.11" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="4.12"/>
+				<caller organisation="jline" name="jline" conf="compile, runtime" rev="4.11" rev-constraint-default="4.11" rev-constraint-dynamic="3.8.1" callerrev="0.9.94"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="3.8.1" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="4.5"/>
+				<caller organisation="commons-httpclient" name="commons-httpclient" conf="compile, runtime" rev="3.8.1" rev-constraint-default="3.8.1" rev-constraint-dynamic="3.8.1" callerrev="3.0.1"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-core" conf="default, compile, runtime, master" rev="4.5" rev-constraint-default="4.5" rev-constraint-dynamic="4.5" callerrev="0.20.2"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.hamcrest" name="hamcrest-core">
+			<revision name="1.3" status="release" pubdate="20120710050802" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="21">
+				<metadata-artifact status="no" details="" size="2397" time="0" location="/Users/peiyuchao/.ivy2/cache/org.hamcrest/hamcrest-core/ivy-1.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.pom"/>
+				<caller organisation="junit" name="junit" conf="compile, runtime" rev="1.3" rev-constraint-default="1.3" rev-constraint-dynamic="1.3" callerrev="4.12"/>
+				<artifacts>
+					<artifact name="hamcrest-core" type="jar" ext="jar" status="no" details="" size="45024" time="0" location="/Users/peiyuchao/.ivy2/cache/org.hamcrest/hamcrest-core/jars/hamcrest-core-1.3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="log4j" name="log4j">
+			<revision name="1.2.17" status="release" pubdate="20120526174339" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://logging.apache.org/log4j/1.2/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="19">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3544" time="0" location="/Users/peiyuchao/.ivy2/cache/log4j/log4j/ivy-1.2.17.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/log4j/log4j/1.2.17/log4j-1.2.17.pom"/>
+				<caller organisation="org.apache.hbase" name="hbase-protocol" conf="compile, runtime" rev="1.2.17" rev-constraint-default="1.2.17" rev-constraint-dynamic="1.2.17" callerrev="1.2.0-cdh5.8.2"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-auth" conf="compile, runtime" rev="1.2.17" rev-constraint-default="1.2.17" rev-constraint-dynamic="1.2.17" callerrev="2.7.3"/>
+				<caller organisation="org.apache.zookeeper" name="zookeeper" conf="compile, runtime" rev="1.2.17" rev-constraint-default="1.2.17" rev-constraint-dynamic="1.2.17" callerrev="3.4.5-cdh5.8.2"/>
+				<caller organisation="org.apache.zookeeper" name="zookeeper" conf="compile, runtime" rev="1.2.17" rev-constraint-default="1.2.17" rev-constraint-dynamic="1.2.16" callerrev="3.4.6"/>
+				<caller organisation="org.slf4j" name="slf4j-log4j12" conf="compile, runtime" rev="1.2.17" rev-constraint-default="1.2.17" rev-constraint-dynamic="1.2.17" callerrev="1.7.10"/>
+				<caller organisation="org.apache.hbase" name="hbase-client" conf="default, compile, runtime, master" rev="1.2.17" rev-constraint-default="1.2.17" rev-constraint-dynamic="1.2.17" callerrev="1.2.0-cdh5.8.2"/>
+				<caller organisation="org.apache.hbase" name="hbase-common" conf="default, compile, runtime, master" rev="1.2.17" rev-constraint-default="1.2.17" rev-constraint-dynamic="1.2.17" callerrev="1.2.0-cdh5.8.2"/>
+				<caller organisation="org.apache.hbase" name="hbase-annotations" conf="compile, runtime" rev="1.2.17" rev-constraint-default="1.2.17" rev-constraint-dynamic="1.2.17" callerrev="1.2.0-cdh5.8.2"/>
+				<caller organisation="org.slf4j" name="slf4j-log4j12" conf="compile, runtime" rev="1.2.17" rev-constraint-default="1.2.17" rev-constraint-dynamic="1.2.17" callerrev="1.7.5"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-common" conf="default, compile, runtime, master" rev="1.2.17" rev-constraint-default="1.2.17" rev-constraint-dynamic="1.2.17" callerrev="2.7.3"/>
+				<artifacts>
+					<artifact name="log4j" type="bundle" ext="jar" status="no" details="" size="489884" time="0" location="/Users/peiyuchao/.ivy2/cache/log4j/log4j/bundles/log4j-1.2.17.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/log4j/log4j/1.2.17/log4j-1.2.17.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.github.stephenc.findbugs" name="findbugs-annotations">
+			<revision name="1.3.9-1" status="release" pubdate="20110420192134" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://stephenc.github.com/findbugs-annotations" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="18">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3495" time="0" location="/Users/peiyuchao/.ivy2/cache/com.github.stephenc.findbugs/findbugs-annotations/ivy-1.3.9-1.xml" searched="false" origin-is-local="false" origin-location="http://repo2.maven.org/maven2/com/github/stephenc/findbugs/findbugs-annotations/1.3.9-1/findbugs-annotations-1.3.9-1.pom"/>
+				<caller organisation="org.apache.hbase" name="hbase-protocol" conf="compile, runtime" rev="1.3.9-1" rev-constraint-default="1.3.9-1" rev-constraint-dynamic="1.3.9-1" callerrev="1.2.0-cdh5.8.2"/>
+				<caller organisation="org.apache.hbase" name="hbase-client" conf="default, compile, runtime, master" rev="1.3.9-1" rev-constraint-default="1.3.9-1" rev-constraint-dynamic="1.3.9-1" callerrev="1.2.0-cdh5.8.2"/>
+				<caller organisation="org.apache.hbase" name="hbase-common" conf="default, compile, runtime, master" rev="1.3.9-1" rev-constraint-default="1.3.9-1" rev-constraint-dynamic="1.3.9-1" callerrev="1.2.0-cdh5.8.2"/>
+				<caller organisation="org.apache.hbase" name="hbase-annotations" conf="compile, runtime" rev="1.3.9-1" rev-constraint-default="1.3.9-1" rev-constraint-dynamic="1.3.9-1" callerrev="1.2.0-cdh5.8.2"/>
+				<artifacts>
+					<artifact name="findbugs-annotations" type="jar" ext="jar" status="no" details="" size="15322" time="0" location="/Users/peiyuchao/.ivy2/cache/com.github.stephenc.findbugs/findbugs-annotations/jars/findbugs-annotations-1.3.9-1.jar">
+						<origin-location is-local="false" location="http://repo2.maven.org/maven2/com/github/stephenc/findbugs/findbugs-annotations/1.3.9-1/findbugs-annotations-1.3.9-1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.hadoop" name="hadoop-core">
+			<revision name="0.20.2" status="release" pubdate="20100311052343" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="1">
+				<metadata-artifact status="no" details="" size="5022" time="0" location="/Users/peiyuchao/.ivy2/cache/org.apache.hadoop/hadoop-core/ivy-0.20.2.xml" searched="false" origin-is-local="false" origin-location="https://repository.apache.org/content/repositories/releases/org/apache/hadoop/hadoop-core/0.20.2/hadoop-core-0.20.2.pom"/>
+				<caller organisation="default" name="hbase_test_2.11" conf="compile, runtime" rev="0.20.2" rev-constraint-default="0.20.2" rev-constraint-dynamic="0.20.2" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="hadoop-core" type="jar" ext="jar" status="no" details="" size="2687928" time="0" location="/Users/peiyuchao/.ivy2/cache/org.apache.hadoop/hadoop-core/jars/hadoop-core-0.20.2.jar">
+						<origin-location is-local="false" location="https://repository.apache.org/content/repositories/releases/org/apache/hadoop/hadoop-core/0.20.2/hadoop-core-0.20.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="hsqldb" name="hsqldb">
+			<revision name="1.8.0.10" status="release" pubdate="20090520052027" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://hsqldb.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="15">
+				<license name="HSQLDB License" url="http://hsqldb.org/web/hsqlLicense.html"/>
+				<metadata-artifact status="no" details="" size="2340" time="0" location="/Users/peiyuchao/.ivy2/cache/hsqldb/hsqldb/ivy-1.8.0.10.xml" searched="false" origin-is-local="false" origin-location="http://repo2.maven.org/maven2/hsqldb/hsqldb/1.8.0.10/hsqldb-1.8.0.10.pom"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-core" conf="default, compile, runtime, master" rev="1.8.0.10" rev-constraint-default="1.8.0.10" rev-constraint-dynamic="1.8.0.10" callerrev="0.20.2"/>
+				<artifacts>
+					<artifact name="hsqldb" type="jar" ext="jar" status="no" details="" size="706710" time="0" location="/Users/peiyuchao/.ivy2/cache/hsqldb/hsqldb/jars/hsqldb-1.8.0.10.jar">
+						<origin-location is-local="false" location="http://repo2.maven.org/maven2/hsqldb/hsqldb/1.8.0.10/hsqldb-1.8.0.10.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="net.sf.kosmosfs" name="kfs">
+			<revision name="0.3" status="release" pubdate="20090520052051" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://kosmosfs.sourceforge.net/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="14">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2445" time="0" location="/Users/peiyuchao/.ivy2/cache/net.sf.kosmosfs/kfs/ivy-0.3.xml" searched="false" origin-is-local="false" origin-location="http://repo2.maven.org/maven2/net/sf/kosmosfs/kfs/0.3/kfs-0.3.pom"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-core" conf="default, compile, runtime, master" rev="0.3" rev-constraint-default="0.3" rev-constraint-dynamic="0.3" callerrev="0.20.2"/>
+				<artifacts>
+					<artifact name="kfs" type="jar" ext="jar" status="no" details="" size="11981" time="0" location="/Users/peiyuchao/.ivy2/cache/net.sf.kosmosfs/kfs/jars/kfs-0.3.jar">
+						<origin-location is-local="false" location="http://repo2.maven.org/maven2/net/sf/kosmosfs/kfs/0.3/kfs-0.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-el" name="commons-el">
+			<revision name="1.0" status="release" pubdate="20051109062050" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://jakarta.apache.org/commons/el/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="13">
+				<license name="The Apache Software License, Version 2.0" url="/LICENSE.txt"/>
+				<metadata-artifact status="no" details="" size="2925" time="0" location="/Users/peiyuchao/.ivy2/cache/commons-el/commons-el/ivy-1.0.xml" searched="false" origin-is-local="false" origin-location="http://repo2.maven.org/maven2/commons-el/commons-el/1.0/commons-el-1.0.pom"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-core" conf="default, compile, runtime, master" rev="1.0" rev-constraint-default="1.0" rev-constraint-dynamic="1.0" callerrev="0.20.2"/>
+				<artifacts>
+					<artifact name="commons-el" type="jar" ext="jar" status="no" details="" size="112341" time="0" location="/Users/peiyuchao/.ivy2/cache/commons-el/commons-el/jars/commons-el-1.0.jar">
+						<origin-location is-local="false" location="http://repo2.maven.org/maven2/commons-el/commons-el/1.0/commons-el-1.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.mortbay.jetty" name="jsp-2.1">
+			<revision name="6.1.14" status="release" pubdate="20081114085031" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="10">
+				<license name="CDDL 1.0" url="https://glassfish.dev.java.net/public/CDDLv1.0.html"/>
+				<metadata-artifact status="no" details="" size="6774" time="0" location="/Users/peiyuchao/.ivy2/cache/org.mortbay.jetty/jsp-2.1/ivy-6.1.14.xml" searched="false" origin-is-local="false" origin-location="http://repo2.maven.org/maven2/org/mortbay/jetty/jsp-2.1/6.1.14/jsp-2.1-6.1.14.pom"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-core" conf="default, compile, runtime, master" rev="6.1.14" rev-constraint-default="6.1.14" rev-constraint-dynamic="6.1.14" callerrev="0.20.2"/>
+				<artifacts>
+					<artifact name="jsp-2.1" type="jar" ext="jar" status="no" details="" size="1024680" time="0" location="/Users/peiyuchao/.ivy2/cache/org.mortbay.jetty/jsp-2.1/jars/jsp-2.1-6.1.14.jar">
+						<origin-location is-local="false" location="http://repo2.maven.org/maven2/org/mortbay/jetty/jsp-2.1/6.1.14/jsp-2.1-6.1.14.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="ant" name="ant">
+			<revision name="1.6.5" status="release" pubdate="20101015204825" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="12">
+				<metadata-artifact status="no" details="" size="2552" time="0" location="/Users/peiyuchao/.ivy2/cache/ant/ant/ivy-1.6.5.xml" searched="false" origin-is-local="false" origin-location="http://repo2.maven.org/maven2/ant/ant/1.6.5/ant-1.6.5.pom"/>
+				<caller organisation="org.mortbay.jetty" name="jsp-2.1" conf="compile, runtime" rev="1.6.5" rev-constraint-default="1.6.5" rev-constraint-dynamic="1.6.5" callerrev="6.1.14"/>
+				<artifacts>
+					<artifact name="ant" type="jar" ext="jar" status="no" details="" size="1034049" time="0" location="/Users/peiyuchao/.ivy2/cache/ant/ant/jars/ant-1.6.5.jar">
+						<origin-location is-local="false" location="http://repo2.maven.org/maven2/ant/ant/1.6.5/ant-1.6.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.jdt" name="core">
+			<revision name="3.1.1" status="release" pubdate="20060901013226" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.eclipse.org/jdt/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="11">
+				<license name="Eclipse Public License v1.0" url="http://www.eclipse.org/org/documents/epl-v10.php"/>
+				<metadata-artifact status="no" details="" size="2315" time="0" location="/Users/peiyuchao/.ivy2/cache/org.eclipse.jdt/core/ivy-3.1.1.xml" searched="false" origin-is-local="false" origin-location="http://repo2.maven.org/maven2/org/eclipse/jdt/core/3.1.1/core-3.1.1.pom"/>
+				<caller organisation="org.mortbay.jetty" name="jsp-2.1" conf="compile, runtime" rev="3.1.1" rev-constraint-default="3.1.1" rev-constraint-dynamic="3.1.1" callerrev="6.1.14"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-core" conf="default, compile, runtime, master" rev="3.1.1" rev-constraint-default="3.1.1" rev-constraint-dynamic="3.1.1" callerrev="0.20.2"/>
+				<artifacts>
+					<artifact name="core" type="jar" ext="jar" status="no" details="" size="3566844" time="0" location="/Users/peiyuchao/.ivy2/cache/org.eclipse.jdt/core/jars/core-3.1.1.jar">
+						<origin-location is-local="false" location="http://repo2.maven.org/maven2/org/eclipse/jdt/core/3.1.1/core-3.1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.mortbay.jetty" name="jsp-api-2.1">
+			<revision name="6.1.14" status="release" pubdate="20081114085002" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="9">
+				<metadata-artifact status="no" details="" size="5957" time="0" location="/Users/peiyuchao/.ivy2/cache/org.mortbay.jetty/jsp-api-2.1/ivy-6.1.14.xml" searched="false" origin-is-local="false" origin-location="http://repo2.maven.org/maven2/org/mortbay/jetty/jsp-api-2.1/6.1.14/jsp-api-2.1-6.1.14.pom"/>
+				<caller organisation="org.mortbay.jetty" name="jsp-2.1" conf="compile, runtime" rev="6.1.14" rev-constraint-default="6.1.14" rev-constraint-dynamic="6.1.14" callerrev="6.1.14"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-core" conf="default, compile, runtime, master" rev="6.1.14" rev-constraint-default="6.1.14" rev-constraint-dynamic="6.1.14" callerrev="0.20.2"/>
+				<artifacts>
+					<artifact name="jsp-api-2.1" type="jar" ext="jar" status="no" details="" size="134910" time="0" location="/Users/peiyuchao/.ivy2/cache/org.mortbay.jetty/jsp-api-2.1/jars/jsp-api-2.1-6.1.14.jar">
+						<origin-location is-local="false" location="http://repo2.maven.org/maven2/org/mortbay/jetty/jsp-api-2.1/6.1.14/jsp-api-2.1-6.1.14.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="tomcat" name="jasper-compiler">
+			<revision name="5.5.12" status="release" pubdate="20051114093108" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="8">
+				<metadata-artifact status="no" details="" size="2198" time="0" location="/Users/peiyuchao/.ivy2/cache/tomcat/jasper-compiler/ivy-5.5.12.xml" searched="false" origin-is-local="false" origin-location="http://repo2.maven.org/maven2/tomcat/jasper-compiler/5.5.12/jasper-compiler-5.5.12.pom"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-core" conf="default, compile, runtime, master" rev="5.5.12" rev-constraint-default="5.5.12" rev-constraint-dynamic="5.5.12" callerrev="0.20.2"/>
+				<artifacts>
+					<artifact name="jasper-compiler" type="jar" ext="jar" status="no" details="" size="405086" time="0" location="/Users/peiyuchao/.ivy2/cache/tomcat/jasper-compiler/jars/jasper-compiler-5.5.12.jar">
+						<origin-location is-local="false" location="http://repo2.maven.org/maven2/tomcat/jasper-compiler/5.5.12/jasper-compiler-5.5.12.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="tomcat" name="jasper-runtime">
+			<revision name="5.5.12" status="release" pubdate="20051114093108" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="7">
+				<metadata-artifact status="no" details="" size="2196" time="0" location="/Users/peiyuchao/.ivy2/cache/tomcat/jasper-runtime/ivy-5.5.12.xml" searched="false" origin-is-local="false" origin-location="http://repo2.maven.org/maven2/tomcat/jasper-runtime/5.5.12/jasper-runtime-5.5.12.pom"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-core" conf="default, compile, runtime, master" rev="5.5.12" rev-constraint-default="5.5.12" rev-constraint-dynamic="5.5.12" callerrev="0.20.2"/>
+				<artifacts>
+					<artifact name="jasper-runtime" type="jar" ext="jar" status="no" details="" size="76698" time="0" location="/Users/peiyuchao/.ivy2/cache/tomcat/jasper-runtime/jars/jasper-runtime-5.5.12.jar">
+						<origin-location is-local="false" location="http://repo2.maven.org/maven2/tomcat/jasper-runtime/5.5.12/jasper-runtime-5.5.12.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.mortbay.jetty" name="servlet-api-2.5">
+			<revision name="6.1.14" status="release" pubdate="20081114084905" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="6">
+				<license name="CDDL 1.0" url="https://glassfish.dev.java.net/public/CDDLv1.0.html"/>
+				<metadata-artifact status="no" details="" size="5157" time="0" location="/Users/peiyuchao/.ivy2/cache/org.mortbay.jetty/servlet-api-2.5/ivy-6.1.14.xml" searched="false" origin-is-local="false" origin-location="http://repo2.maven.org/maven2/org/mortbay/jetty/servlet-api-2.5/6.1.14/servlet-api-2.5-6.1.14.pom"/>
+				<caller organisation="org.mortbay.jetty" name="jsp-api-2.1" conf="compile, runtime" rev="6.1.14" rev-constraint-default="6.1.14" rev-constraint-dynamic="6.1.14" callerrev="6.1.14"/>
+				<caller organisation="org.mortbay.jetty" name="jetty" conf="compile, runtime" rev="6.1.14" rev-constraint-default="6.1.14" rev-constraint-dynamic="6.1.14" callerrev="6.1.14"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-core" conf="default, compile, runtime, master" rev="6.1.14" rev-constraint-default="6.1.14" rev-constraint-dynamic="6.1.14" callerrev="0.20.2"/>
+				<artifacts>
+					<artifact name="servlet-api-2.5" type="jar" ext="jar" status="no" details="" size="132368" time="0" location="/Users/peiyuchao/.ivy2/cache/org.mortbay.jetty/servlet-api-2.5/jars/servlet-api-2.5-6.1.14.jar">
+						<origin-location is-local="false" location="http://repo2.maven.org/maven2/org/mortbay/jetty/servlet-api-2.5/6.1.14/servlet-api-2.5-6.1.14.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="oro" name="oro">
+			<revision name="2.0.8" status="release" pubdate="20080831194523" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="5">
+				<metadata-artifact status="no" details="" size="2170" time="0" location="/Users/peiyuchao/.ivy2/cache/oro/oro/ivy-2.0.8.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/oro/oro/2.0.8/oro-2.0.8.pom"/>
+				<caller organisation="commons-net" name="commons-net" conf="compile, runtime" rev="2.0.8" rev-constraint-default="2.0.8" rev-constraint-dynamic="2.0.8" callerrev="1.4.1"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-core" conf="default, compile, runtime, master" rev="2.0.8" rev-constraint-default="2.0.8" rev-constraint-dynamic="2.0.8" callerrev="0.20.2"/>
+				<artifacts>
+					<artifact name="oro" type="jar" ext="jar" status="no" details="" size="65261" time="0" location="/Users/peiyuchao/.ivy2/cache/oro/oro/jars/oro-2.0.8.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/oro/oro/2.0.8/oro-2.0.8.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-httpclient" name="commons-httpclient">
+			<revision name="3.0.1" status="release" pubdate="20060508043159" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://jakarta.apache.org/commons/httpclient/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="4">
+				<license name="Apache License" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="3185" time="0" location="/Users/peiyuchao/.ivy2/cache/commons-httpclient/commons-httpclient/ivy-3.0.1.xml" searched="false" origin-is-local="false" origin-location="http://repo2.maven.org/maven2/commons-httpclient/commons-httpclient/3.0.1/commons-httpclient-3.0.1.pom"/>
+				<caller organisation="net.java.dev.jets3t" name="jets3t" conf="compile, runtime" rev="3.1" rev-constraint-default="3.1" rev-constraint-dynamic="3.1" callerrev="0.7.1"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-core" conf="default, compile, runtime, master" rev="3.0.1" rev-constraint-default="3.0.1" rev-constraint-dynamic="3.0.1" callerrev="0.20.2"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-common" conf="default, compile, runtime, master" rev="3.1" rev-constraint-default="3.1" rev-constraint-dynamic="3.1" callerrev="2.7.3"/>
+				<artifacts>
+					<artifact name="commons-httpclient" type="jar" ext="jar" status="no" details="" size="279781" time="0" location="/Users/peiyuchao/.ivy2/cache/commons-httpclient/commons-httpclient/jars/commons-httpclient-3.0.1.jar">
+						<origin-location is-local="false" location="http://repo2.maven.org/maven2/commons-httpclient/commons-httpclient/3.0.1/commons-httpclient-3.0.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="3.1" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="3.0.1"/>
+				<caller organisation="net.java.dev.jets3t" name="jets3t" conf="compile, runtime" rev="3.1" rev-constraint-default="3.1" rev-constraint-dynamic="3.1" callerrev="0.7.1"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-common" conf="default, compile, runtime, master" rev="3.1" rev-constraint-default="3.1" rev-constraint-dynamic="3.1" callerrev="2.7.3"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="xmlenc" name="xmlenc">
+			<revision name="0.52" status="release" pubdate="20061124102444" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://xmlenc.sourceforge.net" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="3">
+				<license name="The BSD License" url="http://www.opensource.org/licenses/bsd-license.php"/>
+				<metadata-artifact status="no" details="" size="2333" time="0" location="/Users/peiyuchao/.ivy2/cache/xmlenc/xmlenc/ivy-0.52.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/xmlenc/xmlenc/0.52/xmlenc-0.52.pom"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-core" conf="default, compile, runtime, master" rev="0.52" rev-constraint-default="0.52" rev-constraint-dynamic="0.52" callerrev="0.20.2"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-common" conf="default, compile, runtime, master" rev="0.52" rev-constraint-default="0.52" rev-constraint-dynamic="0.52" callerrev="2.7.3"/>
+				<artifacts>
+					<artifact name="xmlenc" type="jar" ext="jar" status="no" details="" size="15010" time="0" location="/Users/peiyuchao/.ivy2/cache/xmlenc/xmlenc/jars/xmlenc-0.52.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/xmlenc/xmlenc/0.52/xmlenc-0.52.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-cli" name="commons-cli">
+			<revision name="1.2" status="release" pubdate="20090320040835" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/cli/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="2">
+				<metadata-artifact status="no" details="" size="4456" time="0" location="/Users/peiyuchao/.ivy2/cache/commons-cli/commons-cli/ivy-1.2.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/commons-cli/commons-cli/1.2/commons-cli-1.2.pom"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-core" conf="default, compile, runtime, master" rev="1.2" rev-constraint-default="1.2" rev-constraint-dynamic="1.2" callerrev="0.20.2"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-common" conf="default, compile, runtime, master" rev="1.2" rev-constraint-default="1.2" rev-constraint-dynamic="1.2" callerrev="2.7.3"/>
+				<artifacts>
+					<artifact name="commons-cli" type="jar" ext="jar" status="no" details="" size="41123" time="0" location="/Users/peiyuchao/.ivy2/cache/commons-cli/commons-cli/jars/commons-cli-1.2.jar">
+						<origin-location is-local="false" location="https://repository.apache.org/content/repositories/releases/commons-cli/commons-cli/1.2/commons-cli-1.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-library">
+			<revision name="2.11.8" status="release" pubdate="20160309121604" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.11.8/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="0">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2653" time="0" location="/Users/peiyuchao/.ivy2/cache/org.scala-lang/scala-library/ivy-2.11.8.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/scala-lang/scala-library/2.11.8/scala-library-2.11.8.pom"/>
+				<caller organisation="default" name="hbase_test_2.11" conf="compile, runtime" rev="2.11.8" rev-constraint-default="2.11.8" rev-constraint-dynamic="2.11.8" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="5744974" time="0" location="/Users/peiyuchao/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.8.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/scala-lang/scala-library/2.11.8/scala-library-2.11.8.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>

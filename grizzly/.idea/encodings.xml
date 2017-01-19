@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bom" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/extras" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/extras/bundles" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/extras/bundles/grizzly-httpservice-bundle" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/extras/connection-pool" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/extras/grizzly-httpservice" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/extras/http-server-jaxws" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/extras/http-server-multipart" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/extras/http-servlet-extras" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/extras/tls-sni" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/modules" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/modules/bundles" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/modules/bundles/comet" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/modules/bundles/core" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/modules/bundles/http" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/modules/bundles/http-all" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/modules/bundles/http-servlet" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/modules/bundles/websockets" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/modules/comet" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/modules/compression" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/modules/grizzly" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/modules/http" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/modules/http-ajp" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/modules/http-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/modules/http-servlet" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/modules/monitoring" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/modules/monitoring/grizzly" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/modules/monitoring/http" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/modules/monitoring/http-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/modules/portunif" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/modules/spdy" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/modules/websockets" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/samples" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/samples/comet" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/samples/comet/comet-counter" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/samples/connection-pool-samples" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/samples/framework-samples" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/samples/http-ajp-samples" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/samples/http-jaxws-samples" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/samples/http-multipart-samples" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/samples/http-samples" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/samples/http-server-samples" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/samples/portunif" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/samples/spdy-samples" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/samples/tls-sni-samples" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/samples/websockets/chat" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/samples/websockets/chat-ssl" charset="UTF-8" />
+  </component>
+</project>

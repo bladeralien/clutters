@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/extras/connection-pool/connection-pool.iml" filepath="$PROJECT_DIR$/extras/connection-pool/connection-pool.iml" />
+      <module fileurl="file://$PROJECT_DIR$/samples/connection-pool-samples/connection-pool-samples.iml" filepath="$PROJECT_DIR$/samples/connection-pool-samples/connection-pool-samples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bom/grizzly-bom.iml" filepath="$PROJECT_DIR$/bom/grizzly-bom.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modules/bundles/grizzly-bundles.iml" filepath="$PROJECT_DIR$/modules/bundles/grizzly-bundles.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modules/comet/grizzly-comet.iml" filepath="$PROJECT_DIR$/modules/comet/grizzly-comet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/samples/comet/comet-counter/grizzly-comet-counter.iml" filepath="$PROJECT_DIR$/samples/comet/comet-counter/grizzly-comet-counter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/samples/comet/grizzly-comet-samples.iml" filepath="$PROJECT_DIR$/samples/comet/grizzly-comet-samples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modules/bundles/comet/grizzly-comet-server.iml" filepath="$PROJECT_DIR$/modules/bundles/comet/grizzly-comet-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modules/compression/grizzly-compression.iml" filepath="$PROJECT_DIR$/modules/compression/grizzly-compression.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modules/bundles/core/grizzly-core.iml" filepath="$PROJECT_DIR$/modules/bundles/core/grizzly-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/extras/bundles/grizzly-extra-bundles.iml" filepath="$PROJECT_DIR$/extras/bundles/grizzly-extra-bundles.iml" />
+      <module fileurl="file://$PROJECT_DIR$/extras/grizzly-extras.iml" filepath="$PROJECT_DIR$/extras/grizzly-extras.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modules/grizzly/grizzly-framework.iml" filepath="$PROJECT_DIR$/modules/grizzly/grizzly-framework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modules/monitoring/grizzly/grizzly-framework-monitoring.iml" filepath="$PROJECT_DIR$/modules/monitoring/grizzly/grizzly-framework-monitoring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/samples/framework-samples/grizzly-framework-samples.iml" filepath="$PROJECT_DIR$/samples/framework-samples/grizzly-framework-samples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modules/http/grizzly-http.iml" filepath="$PROJECT_DIR$/modules/http/grizzly-http.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modules/http-ajp/grizzly-http-ajp.iml" filepath="$PROJECT_DIR$/modules/http-ajp/grizzly-http-ajp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/samples/http-ajp-samples/grizzly-http-ajp-samples.iml" filepath="$PROJECT_DIR$/samples/http-ajp-samples/grizzly-http-ajp-samples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modules/bundles/http-all/grizzly-http-all.iml" filepath="$PROJECT_DIR$/modules/bundles/http-all/grizzly-http-all.iml" />
+      <module fileurl="file://$PROJECT_DIR$/samples/http-jaxws-samples/grizzly-http-jaxws-samples.iml" filepath="$PROJECT_DIR$/samples/http-jaxws-samples/grizzly-http-jaxws-samples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modules/monitoring/http/grizzly-http-monitoring.iml" filepath="$PROJECT_DIR$/modules/monitoring/http/grizzly-http-monitoring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/samples/http-multipart-samples/grizzly-http-multipart-samples.iml" filepath="$PROJECT_DIR$/samples/http-multipart-samples/grizzly-http-multipart-samples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/samples/http-samples/grizzly-http-samples.iml" filepath="$PROJECT_DIR$/samples/http-samples/grizzly-http-samples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modules/http-server/grizzly-http-server.iml" filepath="$PROJECT_DIR$/modules/http-server/grizzly-http-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modules/bundles/http/grizzly-http-server-core.iml" filepath="$PROJECT_DIR$/modules/bundles/http/grizzly-http-server-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/extras/http-server-jaxws/grizzly-http-server-jaxws.iml" filepath="$PROJECT_DIR$/extras/http-server-jaxws/grizzly-http-server-jaxws.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modules/monitoring/http-server/grizzly-http-server-monitoring.iml" filepath="$PROJECT_DIR$/modules/monitoring/http-server/grizzly-http-server-monitoring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/extras/http-server-multipart/grizzly-http-server-multipart.iml" filepath="$PROJECT_DIR$/extras/http-server-multipart/grizzly-http-server-multipart.iml" />
+      <module fileurl="file://$PROJECT_DIR$/samples/http-server-samples/grizzly-http-server-samples.iml" filepath="$PROJECT_DIR$/samples/http-server-samples/grizzly-http-server-samples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modules/http-servlet/grizzly-http-servlet.iml" filepath="$PROJECT_DIR$/modules/http-servlet/grizzly-http-servlet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/extras/http-servlet-extras/grizzly-http-servlet-extras.iml" filepath="$PROJECT_DIR$/extras/http-servlet-extras/grizzly-http-servlet-extras.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modules/bundles/http-servlet/grizzly-http-servlet-server.iml" filepath="$PROJECT_DIR$/modules/bundles/http-servlet/grizzly-http-servlet-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/extras/grizzly-httpservice/grizzly-httpservice.iml" filepath="$PROJECT_DIR$/extras/grizzly-httpservice/grizzly-httpservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/extras/bundles/grizzly-httpservice-bundle/grizzly-httpservice-bundle.iml" filepath="$PROJECT_DIR$/extras/bundles/grizzly-httpservice-bundle/grizzly-httpservice-bundle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modules/grizzly-modules.iml" filepath="$PROJECT_DIR$/modules/grizzly-modules.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modules/monitoring/grizzly-monitoring.iml" filepath="$PROJECT_DIR$/modules/monitoring/grizzly-monitoring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modules/portunif/grizzly-portunif.iml" filepath="$PROJECT_DIR$/modules/portunif/grizzly-portunif.iml" />
+      <module fileurl="file://$PROJECT_DIR$/samples/portunif/grizzly-portunif-samples.iml" filepath="$PROJECT_DIR$/samples/portunif/grizzly-portunif-samples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/grizzly-project.iml" filepath="$PROJECT_DIR$/grizzly-project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/samples/grizzly-samples.iml" filepath="$PROJECT_DIR$/samples/grizzly-samples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modules/spdy/grizzly-spdy.iml" filepath="$PROJECT_DIR$/modules/spdy/grizzly-spdy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/samples/spdy-samples/grizzly-spdy-samples.iml" filepath="$PROJECT_DIR$/samples/spdy-samples/grizzly-spdy-samples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/samples/tls-sni-samples/grizzly-tls-sni-samples.iml" filepath="$PROJECT_DIR$/samples/tls-sni-samples/grizzly-tls-sni-samples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modules/websockets/grizzly-websockets.iml" filepath="$PROJECT_DIR$/modules/websockets/grizzly-websockets.iml" />
+      <module fileurl="file://$PROJECT_DIR$/samples/websockets/chat/grizzly-websockets-chat.iml" filepath="$PROJECT_DIR$/samples/websockets/chat/grizzly-websockets-chat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/samples/websockets/chat-ssl/grizzly-websockets-chat-ssl.iml" filepath="$PROJECT_DIR$/samples/websockets/chat-ssl/grizzly-websockets-chat-ssl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modules/bundles/websockets/grizzly-websockets-server.iml" filepath="$PROJECT_DIR$/modules/bundles/websockets/grizzly-websockets-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/extras/tls-sni/tls-sni.iml" filepath="$PROJECT_DIR$/extras/tls-sni/tls-sni.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <resourceExtensions />
+    <wildcardResourcePatterns>
+      <entry name="!?*.java" />
+      <entry name="!?*.form" />
+      <entry name="!?*.class" />
+      <entry name="!?*.groovy" />
+      <entry name="!?*.scala" />
+      <entry name="!?*.flex" />
+      <entry name="!?*.kt" />
+      <entry name="!?*.clj" />
+      <entry name="!?*.aj" />
+    </wildcardResourcePatterns>
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="false">
+        <processorPath useClasspath="true" />
+      </profile>
+      <profile default="false" name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="connection-pool" />
+        <module name="connection-pool-samples" />
+        <module name="grizzly-comet" />
+        <module name="grizzly-comet-counter" />
+        <module name="grizzly-comet-server" />
+        <module name="grizzly-compression" />
+        <module name="grizzly-core" />
+        <module name="grizzly-framework" />
+        <module name="grizzly-framework-monitoring" />
+        <module name="grizzly-framework-samples" />
+        <module name="grizzly-http" />
+        <module name="grizzly-http-ajp" />
+        <module name="grizzly-http-ajp-samples" />
+        <module name="grizzly-http-all" />
+        <module name="grizzly-http-jaxws-samples" />
+        <module name="grizzly-http-monitoring" />
+        <module name="grizzly-http-multipart-samples" />
+        <module name="grizzly-http-samples" />
+        <module name="grizzly-http-server" />
+        <module name="grizzly-http-server-core" />
+        <module name="grizzly-http-server-jaxws" />
+        <module name="grizzly-http-server-monitoring" />
+        <module name="grizzly-http-server-multipart" />
+        <module name="grizzly-http-server-samples" />
+        <module name="grizzly-http-servlet" />
+        <module name="grizzly-http-servlet-extras" />
+        <module name="grizzly-http-servlet-server" />
+        <module name="grizzly-httpservice" />
+        <module name="grizzly-httpservice-bundle" />
+        <module name="grizzly-portunif" />
+        <module name="grizzly-portunif-samples" />
+        <module name="grizzly-spdy" />
+        <module name="grizzly-spdy-samples" />
+        <module name="grizzly-tls-sni-samples" />
+        <module name="grizzly-websockets" />
+        <module name="grizzly-websockets-chat" />
+        <module name="grizzly-websockets-chat-ssl" />
+        <module name="grizzly-websockets-server" />
+        <module name="tls-sni" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="connection-pool" target="1.6" />
+      <module name="connection-pool-samples" target="1.6" />
+      <module name="grizzly-bom" target="1.5" />
+      <module name="grizzly-bundles" target="1.6" />
+      <module name="grizzly-comet" target="1.6" />
+      <module name="grizzly-comet-counter" target="1.6" />
+      <module name="grizzly-comet-samples" target="1.6" />
+      <module name="grizzly-comet-server" target="1.6" />
+      <module name="grizzly-compression" target="1.6" />
+      <module name="grizzly-core" target="1.6" />
+      <module name="grizzly-extra-bundles" target="1.6" />
+      <module name="grizzly-extras" target="1.6" />
+      <module name="grizzly-framework" target="1.6" />
+      <module name="grizzly-framework-monitoring" target="1.6" />
+      <module name="grizzly-framework-samples" target="1.6" />
+      <module name="grizzly-http" target="1.6" />
+      <module name="grizzly-http-ajp" target="1.6" />
+      <module name="grizzly-http-ajp-samples" target="1.6" />
+      <module name="grizzly-http-all" target="1.6" />
+      <module name="grizzly-http-jaxws-samples" target="1.6" />
+      <module name="grizzly-http-monitoring" target="1.6" />
+      <module name="grizzly-http-multipart-samples" target="1.6" />
+      <module name="grizzly-http-samples" target="1.6" />
+      <module name="grizzly-http-server" target="1.6" />
+      <module name="grizzly-http-server-core" target="1.6" />
+      <module name="grizzly-http-server-jaxws" target="1.6" />
+      <module name="grizzly-http-server-monitoring" target="1.6" />
+      <module name="grizzly-http-server-multipart" target="1.6" />
+      <module name="grizzly-http-server-samples" target="1.6" />
+      <module name="grizzly-http-servlet" target="1.6" />
+      <module name="grizzly-http-servlet-extras" target="1.6" />
+      <module name="grizzly-http-servlet-server" target="1.6" />
+      <module name="grizzly-httpservice" target="1.6" />
+      <module name="grizzly-httpservice-bundle" target="1.6" />
+      <module name="grizzly-modules" target="1.6" />
+      <module name="grizzly-monitoring" target="1.6" />
+      <module name="grizzly-portunif" target="1.6" />
+      <module name="grizzly-portunif-samples" target="1.6" />
+      <module name="grizzly-project" target="1.6" />
+      <module name="grizzly-samples" target="1.6" />
+      <module name="grizzly-spdy" target="1.6" />
+      <module name="grizzly-spdy-samples" target="1.6" />
+      <module name="grizzly-tls-sni-samples" target="1.6" />
+      <module name="grizzly-websockets" target="1.6" />
+      <module name="grizzly-websockets-chat" target="1.6" />
+      <module name="grizzly-websockets-chat-ssl" target="1.6" />
+      <module name="grizzly-websockets-server" target="1.6" />
+      <module name="tls-sni" target="1.6" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

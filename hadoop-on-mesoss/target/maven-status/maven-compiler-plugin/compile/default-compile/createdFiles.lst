@@ -1,0 +1,16 @@
+org/apache/hadoop/mapred/ResourcePolicyVariable.class
+org/apache/hadoop/mapred/MesosScheduler$1.class
+org/apache/hadoop/mapred/ResourcePolicy.class
+org/apache/hadoop/mapred/MesosExecutor.class
+org/apache/hadoop/mapred/MesosExecutor$1.class
+org/apache/hadoop/mapred/MesosExecutor$2.class
+org/apache/hadoop/mapred/MesosTracker$1.class
+org/apache/hadoop/mapred/ResourcePolicyFixed.class
+org/apache/mesos/hadoop/Utils.class
+org/apache/hadoop/mapred/MesosExecutor$3.class
+org/apache/hadoop/mapred/MesosTracker.class
+org/apache/hadoop/mapred/MesosTracker$3.class
+org/apache/hadoop/mapred/MesosScheduler.class
+org/apache/hadoop/mapred/MesosTracker$2.class
+org/apache/mesos/hadoop/Metrics.class
+org/apache/hadoop/mapred/MesosScheduler$2.class
